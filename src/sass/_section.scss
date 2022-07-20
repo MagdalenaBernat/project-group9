@@ -1,0 +1,24 @@
+@import 'variables';
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__header-main {
+    font-family: getFont('main-font');
+    font-weight: 400;
+    font-size: 18px;
+    color: getColor('text-main'); 
+    }
+
+    &__header-category {
+    font-family: getFont('main-font');
+    font-weight: 400;
+    font-size: 34px;
+    color: getColor('text-category');
+    }
+
+}
+
