@@ -4,6 +4,7 @@
  * Wszystkie partials podłączamy tutaj.
  */
 .container--pink {
+  position: relative;
   background-color: #FFB8CA;
   margin: 0 auto;
   padding: 0;
@@ -224,6 +225,27 @@
   width: 200px;
   z-index: 4;
   margin-right: -30px;
+}
+
+.icecream {
+  left: 594px;
+  top: 108px;
+  width: 236px;
+  height: 557px;
+}
+
+.girl {
+  width: 293px;
+  height: 232px;
+  left: 878px;
+  bottom: 0;
+}
+
+.milk {
+  width: 188px;
+  height: 191px;
+  left: 77px;
+  top: 429px;
 }
 
 .section {
