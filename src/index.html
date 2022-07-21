@@ -1,143 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="sass/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section class="section">
-      <span class="section__header-main">100% natural</span>
 
-      <span class="section__header-category">products</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagłówek strony</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="sass/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <ul class="grid">
-        <li class="grid__item">
-          <div class="product-card--first">
-            <span class="product-card__name">ice cream</span>
-            <img class="product-card__image" src="./images/ice-cream1.jpg" />
-            <span class="product-card__ellipse">...</span>
-            <span class="product-card__description"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et. dolore magna aliqua facilisis.</span
-            >
-            <a class="product-card__navigation"><img src="./images/arrow-right.svg" /></a>
+<body>
+  <!--    MENU    -->
+
+  <header>
+    <div class="container--pink">
+      <div class="hero">
+        <div class="hero__menu">
+          <a href="/" class="logo">
+            <img src="./images/hero/logo.png" />
+          </a>
+
+          <nav class="hero__navigation">
+            <ul class="hero__list">
+              <li>
+                <a href="index.html" class="hero__link">Home</a>
+              </li>
+              <li>
+                <a href="" class="hero__link">About us</a>
+              </li>
+              <li><a href="" class="hero__link">How It's made?</a></li>
+              <li><a href="" class="hero__link">Our products</a></li>
+              <li><a href="" class="hero__link">Contact</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="button--white">Buy now
+            <svg class="hero__btn-icon">
+              <use href=""></use>
+            </svg>
+          </button>
+        </div>
+
+        <!--    HERO    -->
+
+        <div class="hero__header">
+          <h1 class="hero__title">
+            Ice cream made with passion
+          </h1>
+          <a href="#">
+            <button type="button" class="button--red">Products
+            </button>
+          </a>
+          <a href="#">
+            <button type="button" class="button--white">How it's made?
+            </button>
+          </a>
+        </div>
+        <div class="hero__img">
+          <img src="" class="hero__img icecream" />
+        </div>
+        <div class="hero__numbers">
+          <div class="hero__box">
+            <p class="hero__number">16</p>
+            <p class="hero__name">cafes</p>
           </div>
-        </li>
-
-        <li>
-          <span>ice cream</span>
-          <img src="./images/ice-cream2.jpg" />
-          <span>...</span>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.</span
-          >
-          <a><img src="./images/arrow-right.svg" /></a>
-        </li>
-        <li>
-          <span>ice cream</span>
-          <img src="./images/ice-cream3.jpg" />
-          <span>...</span>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.</span
-          >
-          <a><img src="./images/arrow-right.svg" /></a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/example.html"></include>
-
-<!--    MENU    -->
-
-    <header>
-      <div class="container">
-        <div class="hero">
-          <div class="hero__menu">
-            <a href="/" class="logo">
-              <img src="./images/hero/logo.png" />
-            </a>
-    
-            <nav class="hero__navigation">
-              <ul class="hero__list">
-                <li>
-                  <a href="index.html" class="hero__link">Home</a>
-                </li>
-                <li>
-                  <a href="" class="hero__link">About us</a>
-                </li>
-                <li><a href="" class="hero__link">How It's made?</a></li>
-                <li><a href="" class="hero__link">Our products</a></li>
-                <li><a href="" class="hero__link">Contact</a></li>
-              </ul>
-            </nav>
-            <button type="button" class="button--white">Buy now
-              <svg class="hero__btn-icon">
-                <use href=""></use>
-              </svg>
+          <div class="hero__box">
+            <p class="hero__number">23</p>
+            <p class="hero__name">food trucks</p>
+            <img src="" class="hero__img girl" />
+          </div>
+          <div class="hero__eco">
+            <img src="" class="hero__img milk" />
+            <p class="hero__eco--title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur non et, nulla dicta delectus, iste
+              quam
+              illum neque at qui exercitationem deserunt, accusantium consequuntur provident!
+            </p>
+            <button class="button--circle" type="button">
+              <svg class="hero__btn--circle" <use href=""></use>
             </button>
           </div>
+        </div>
+      </div>
+  </header>
 
-<!--    HERO    -->
 
-          <div class="hero__header">
-            <h1 class="hero__title">
-              Ice cream made with passion
-            </h1>
-            <a href="#">
-              <button type="button" class="button--red">Products
-              </button>
-            </a>
-            <a href="#">
-              <button type="button" class="button--white">How it's made?
-              </button>
-            </a>
-          </div>
-          <div class="hero__img">
-            <img src="" class="hero__img icecream" />
-          </div>
-          <div class="hero__numbers">
-            <div class="hero__box">
-              <p class="hero__number">16</p>
-              <p class="hero__name">cafes</p>
-            </div>
-            <div class="hero__box">
-              <p class="hero__number">23</p>
-              <p class="hero__name">food trucks</p>
-              <img src="" class="hero__img girl" />
-            </div>
-            <div class="hero__eco">
-              <img src="" class="hero__img milk" />
-              <p class="hero__eco--title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur non et, nulla dicta delectus, iste quam
-                illum neque at qui exercitationem deserunt, accusantium consequuntur provident!
-              </p>
-              <button class="button--circle" type="button">
-                <svg class="hero__btn--circle" <use href=""></use>
-              </button>
-            </div>
-          </div>
-    </header>
+  <section class="section">
+    <span class="section__header-main">100% natural</span>
 
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js"></script>
-  </body>
+    <span class="section__header-category">products</span>
+
+    <ul class="grid">
+      <li class="grid__item">
+        <div class="product-card--first">
+          <span class="product-card__name">ice cream</span>
+          <img class="product-card__image" src="./images/ice-cream1.jpg" />
+          <span class="product-card__ellipse">...</span>
+          <span class="product-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor
+            incididunt ut labore et. dolore magna aliqua facilisis.</span>
+          <a class="product-card__navigation"><img src="./images/arrow-right.svg" /></a>
+        </div>
+      </li>
+
+      <li>
+        <span>ice cream</span>
+        <img src="./images/ice-cream2.jpg" />
+        <span>...</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et. dolore magna aliqua facilisis.</span>
+        <a><img src="./images/arrow-right.svg" /></a>
+      </li>
+      <li>
+        <span>ice cream</span>
+        <img src="./images/ice-cream3.jpg" />
+        <span>...</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et. dolore magna aliqua facilisis.</span>
+        <a><img src="./images/arrow-right.svg" /></a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+  <include src="./partials/example.html"></include>
+
+
+
+
+  <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+  <script src="./index.js"></script>
+</body>
+
 </html>

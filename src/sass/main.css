@@ -3,6 +3,24 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+.container--pink {
+  background-color: #FFB8CA;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 199px;
+  height: 50px;
+  padding-left: 46px;
+}
+
 .section {
   display: flex;
   justify-content: center;
