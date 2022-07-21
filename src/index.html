@@ -23,71 +23,84 @@
 
   <header>
     <div class="container--pink">
-      <div class="hero">
-        <div class="hero__menu">
+      <div class="header">
+        <div class="header__menu">
           <a href="/" class="logo">
             <img src="./images/hero/logo.png" />
           </a>
 
-          <nav class="hero__navigation">
-            <ul class="hero__list">
+          <nav class="header__navigation">
+            <ul class="header__list">
               <li>
-                <a href="index.html" class="hero__link">Home</a>
+                <a href="index.html" class="header__link">Home</a>
               </li>
               <li>
-                <a href="" class="hero__link">About us</a>
+                <a href="" class="header__link">About us</a>
               </li>
-              <li><a href="" class="hero__link">How It's made?</a></li>
-              <li><a href="" class="hero__link">Our products</a></li>
-              <li><a href="" class="hero__link">Contact</a></li>
+              <li><a href="" class="header__link">How It's made?</a></li>
+              <li><a href="" class="header__link">Our products</a></li>
+              <li><a href="" class="header__link">Contact</a></li>
             </ul>
           </nav>
-          <button type="button" class="button--white">Buy now
-            <svg class="hero__btn-icon">
-              <use href=""></use>
+          <button type="button" class="button--white">
+            <p class="button__title--header">Buy now</p>
+            <svg class="header__btn-icon">
+              <use href="./images/hero/arrow.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
 
         <!--    HERO    -->
-
-        <div class="hero__header">
-          <h1 class="hero__title">
-            Ice cream made with passion
-          </h1>
-          <a href="#">
-            <button type="button" class="button--red">Products
-            </button>
-          </a>
-          <a href="#">
-            <button type="button" class="button--white">How it's made?
-            </button>
-          </a>
-        </div>
-        <div class="hero__img">
-          <img src="" class="hero__img icecream" />
-        </div>
-        <div class="hero__numbers">
-          <div class="hero__box">
-            <p class="hero__number">16</p>
-            <p class="hero__name">cafes</p>
+        <div class="hero">
+          <div class="hero__header">
+            <h1 class="hero__title">
+              Ice cream made with <span style='
+              color:#D41443;
+              font-size: 58px;'>passion</span>
+            </h1>
+            <div class="hero__links">
+              <a class="hero__link" href="#">
+                <button type="button" class="button--red">
+                  <p class="button__title--white"> Products</p>
+                </button>
+              </a>
+              <a class="hero__link" href="#">
+                <button type="button" class="button--white">
+                  <p class='button__title--red'>How it's made?</p>
+                </button>
+              </a>
+            </div>
           </div>
-          <div class="hero__box">
-            <p class="hero__number">23</p>
-            <p class="hero__name">food trucks</p>
-            <img src="" class="hero__img girl" />
+          <div class="hero__ice">
+            <!--  <img src="./images/hero/ice.png" class="hero__img icecream" />  -->
+          </div>
+
+          <div class="hero__lokals">
+            <div class="hero__lokal">
+              <div class="hero__box">
+                <p class="hero__nr">16</p>
+              </div>
+              <p class="hero__name">cafes</p>
+            </div>
+            <div class="hero__lokal">
+              <div class="hero__box--next">
+                <p class="hero__nr">23</p>
+                <p class="hero__name">food trucks</p>
+                <!--  <img src="./images/hero/girl.png" class="hero__img girl" />  -->
+              </div>
+            </div>
           </div>
           <div class="hero__eco">
-            <img src="" class="hero__img milk" />
+            <!--  <img src="./images/hero/milk.png" class="hero__img milk" />  -->
             <p class="hero__eco--title">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur non et, nulla dicta delectus, iste
               quam
-              illum neque at qui exercitationem deserunt, accusantium consequuntur provident!
             </p>
             <button class="button--circle" type="button">
-              <svg class="hero__btn--circle" <use href=""></use>
+              <img src="./images/hero/arrow-white.png" />
             </button>
           </div>
+
         </div>
       </div>
   </header>
