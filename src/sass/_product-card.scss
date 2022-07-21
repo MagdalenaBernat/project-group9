@@ -1,0 +1,15 @@
+@import 'variables';
+
+.product-card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--first {
+    color: getColor('background-first');
+    border-radius: 50%;
+    }
+
+}
