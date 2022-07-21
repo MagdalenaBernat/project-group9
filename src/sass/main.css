@@ -9,12 +9,14 @@
   align-items: center;
   flex-direction: column;
 }
+
 .section__header-main {
   font-family: "Titan One", cursive;
   font-weight: 400;
   font-size: 18px;
   color: #FFA5BA;
 }
+
 .section__header-category {
   font-family: "Titan One", cursive;
   font-weight: 400;
@@ -28,7 +30,8 @@
   align-items: center;
   flex-direction: column;
 }
+
 .product-card--first {
   color: #FFB8CA;
   border-radius: 50%;
-}/*# sourceMappingURL=main.css.map */
+}
