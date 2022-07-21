@@ -11,7 +11,17 @@
 
 .hero__menu {
   display: flex;
+  max-height: 90px;
   justify-content: space-between;
+  align-items: baseline;
+}
+.hero__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  gap: 35px;
   align-items: center;
 }
 
