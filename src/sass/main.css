@@ -31,4 +31,13 @@
 .product-card--first {
   color: #FFB8CA;
   border-radius: 50%;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.social-list__icon {
+  fill: #FEA5BB;
 }/*# sourceMappingURL=main.css.map */
