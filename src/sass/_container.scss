@@ -5,6 +5,32 @@
         background-color: #FFB8CA;
         margin: 0 auto;
         padding: 0;
+
+@media screen and (min-width: 320px) and {
+    .container {
+
+        &--pink {
+max-width: 1280px;
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+.container {
+
+        &--pink {
+            max-width: 1280px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .container {
+    
+            &--pink {
         max-width: 1280px;
+         }
     }
 }
