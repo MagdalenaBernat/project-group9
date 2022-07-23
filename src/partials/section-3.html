@@ -9,7 +9,7 @@
   </head>
   <body>
     <section class="about">
-      <container class="container">
+      <div class="container">
         <h2 class="about__small-tittle">tradition and love</h2>
         <h1 class="about__main-tittle">how it’s made?</h1>
         <div class="about__main-part">
@@ -29,30 +29,34 @@
           <p class="about__text">
             Aliquam erat volutpat. Aenean accumsan.
           </p>
-          <button class="button" type="button">Read more</button>
+          <button class="button" type="button">Read more
+            <svg class="button__svg" width="4" height="8">
+              <use href="../images/symbol-defs.svg"></use>
+            </svg>
+          </button>
         </div>
         </div>
         <ul class="advantages">
           <li class="advantages__list">
             <ul>
-              <li class="advantages__item">721</li>
+              <li class="advantages__item advantages__item--first">721</li>
               <li class="advantages__item">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</li>
             </ul>
           </li>
           <li class="advantages__list">
             <ul>
-              <li class="advantages__item">16KG</li>
+              <li class="advantages__item advantages__item--second">16KG</li>
               <li class="advantages__item">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</li>
             </ul>
           </li>
           <li class="advantages__list">
             <ul>
-              <li class="advantages__item">84</li>
+              <li class="advantages__item advantages__item--third">84</li>
               <li class="advantages__item">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</li>
             </ul>
           </li>
         </ul>
-      </container>
+      </div>
     </section>
   </body>
 </html>
