@@ -115,53 +115,47 @@
       </div>
 
       <!--    MOBILE MENU    -->
-<!--
+
       <div class="mobile is-hidden" data-mobile>
-        <div class="container mobile__modal">
-          <button class="mobile__btn" type="button" data-mobile-close>
-            <svg class="mobile__icon">
-              <use href="./images/mobile/mobile-menu.svg#icon-mobile-icon"></use>
+        <div class="mobile__modal">
+          <button class="mobile__close" type="button" data-mobile-close>
+            <svg class="close-btn-icon">
+              <use href="./images/hero/close.svg#icon-close"></use>
             </svg>
           </button>
           <div class="mobile__menu">
-            <nav class="mobile__navigation">
-              <ul class="mobile__list">
-                <li>
-                  <a href="index.html" class="mobile__link ">Agencja</a>
-                </li>
-                <li>
-                  <a href="portfolio.html" class="mobile__link">Portfolio</a>
-                </li>
-                <li><a href="" class="mobile__link">Kontakt</a></li>
-              </ul>
-            </nav>
-            <div class="mobile__contacts">
-              <div class="mobile__phone">
-                <a class="mobile__phone" href="tel:+48111111111">+48 111 111 111</a>
-              </div>
-              <div class="mobile__mail">
-                <a class="mobile__mail" href="mailto:info@devstudio.com">info@devstudio.com
-                </a>
-              </div>
-              <ul class="mobile__socials">
-                <li class="mobile__insta-box mobile__social">
-                  <a href="" class="mobile__insta">Instagram</a>
-                </li>
-                <li class="mobile__social">
-                  <a href="" class="mobile__twitter">Twitter</a>
-                </li>
-                <li class="mobile__social">
-                  <a href="" class="mobile__fb">Facebook</a>
-                </li>
-                <li class="mobile__social ">
-                  <a href="" class="mobile__linkedin">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
+          <div class="button--mobile">
+            <button type="button" class="button__header">
+              <p class="button__title--header">Buy now</p>
+              <svg class="header__btn-icon">
+                <use href="./images/hero/arrow.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile__list">
+            <ul class="mobile__links">
+              <li >
+                <a href="" class="mobile__link">Home</a>
+              </li>
+              <li class="mobile__link">
+                <a href="">About us</a>
+              </li>
+              <li class="mobile__link">
+                <a href="">How it's made?</a>
+              </li>
+              <li class="mobile__link">
+                <a href="">Our products</a>
+              </li>
+              <li class="mobile__link">
+                <a href="">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-  </header> -->
+    </div>
+    </div>
+  </header> 
 
 
   <section class="section">
@@ -209,6 +203,7 @@
 
   <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
   <script src="./index.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

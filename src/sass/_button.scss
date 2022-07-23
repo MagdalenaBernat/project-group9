@@ -1,10 +1,10 @@
 @media screen and (max-width:767px) {
 
-    .button__header {
-        display: none;
-    }
+.button__header {
+    display: none;
+}
 
-        .button {
+.button {
     &--mobile,
     &--white,
     &--red {
@@ -16,11 +16,11 @@
         border-style: none;
         z-index: 4;
     }
-                &__mobile {
-                    border-radius: 22px;
-                    width: 209px;
-                    height: 44px;
-                }
+    &__mobile {
+        border-radius: 22px;
+        width: 209px;
+        height: 44px;
+    }
 
     &--white{
         background-color: #fff;
@@ -33,20 +33,20 @@
         fill: #D41443;
     }
 
-&--red {
-    background: #D41443;
-    border-color: #D41443;
+    &--red {
+        background: #D41443;
+        border-color: #D41443;
 
-    &:hover,
-    &:focus {
+        &:hover,
+        &:focus {
         background: #C7133E;
         border-color: #C7133E;
+        }
     }
-}
-                &--white,
-                &--red {
-                    border-radius: 20px;
-                    height: 24px;
+    &--white,
+    &--red {
+        border-radius: 20px;
+        height: 24px;
                 }
 }
 .button__title--header,
@@ -102,11 +102,11 @@
                 z-index: 4;
             }
     
-            &__mobile {
+            &--mobile {
                 border-radius: 22px;
                 width: 209px;
                 height: 44px;
-                
+                padding-top:60px;
             }
             &__header,
             &--white {
