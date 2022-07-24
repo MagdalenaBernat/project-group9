@@ -3,7 +3,7 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
- @import './base/section';
+@import './base/section';
 @import './base/container';
 
 @import './components/product-card';
@@ -12,3 +12,18 @@
 
 @import './utils/variables';
 
+
+modal-map
+@import './container';
+@import './header';
+@import './logo';
+@import './button';
+@import './hero';
+@import './hero__img';
+@import './mobile-menu';
+// Style dla pliku z przykładem HTML fragmentu
+@import './section';
+@import './product-card';
+@import './footer';
+@import './modal-menu';
+@import './modal-map'
