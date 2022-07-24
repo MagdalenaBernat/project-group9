@@ -184,9 +184,11 @@
   }
   .button--mobile {
     border-radius: 22px;
-    width: 209px;
+    width: 186px;
     height: 44px;
     padding-top: 60px;
+    align-items: center;
+    margin: 0 auto;
   }
   .button__header, .button--white {
     background-color: #fff;
@@ -802,8 +804,8 @@ margin-bottom: 20px;
   position: fixed;
   right: 0;
   top: 0;
-  width: 254px;
-  min-height: 1020px;
+  width: 250px;
+  min-height: 502px;
   background-color: #E17992;
   transition: opacity 250ms;
   z-index: 7;
@@ -814,7 +816,7 @@ margin-bottom: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 254px;
+  width: 250px;
   min-height: 1020px;
   background-color: #E17992;
 }
@@ -841,7 +843,7 @@ margin-bottom: 20px;
   cursor: pointer;
 }
 .close-btn-icon:hover, .close-btn-icon:focus {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) 3000ms;
 }
 
 .is-hidden {
@@ -896,6 +898,25 @@ mobile__link:hover, mobile__link:focus {
   color: #D41443;
 }
 
+@media screen and (min-width: 767px) {
+  .mobile {
+    width: 254px;
+    min-height: 1020px;
+  }
+  .mobile__modal {
+    width: 254px;
+    min-height: 1020px;
+  }
+  .mobile__item {
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile,
+.mobile__modal {
+    display: none;
+  }
+}
 .section {
   display: flex;
   justify-content: center;

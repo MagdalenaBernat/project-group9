@@ -1,9 +1,11 @@
+
+
 .mobile {
     position: fixed;
     right: 0;
     top: 0;
-    width: 254px;
-    min-height: 1020px;
+    width: 250px;
+    min-height: 502px;
     background-color:#E17992;
     transition: opacity 250ms;
     z-index: 7;
@@ -14,7 +16,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 254px;
+    width: 250px;
     min-height: 1020px;
     background-color: #E17992;
 
@@ -43,7 +45,7 @@
 
     &:hover,
     &:focus{
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) 3000ms;
     }
 }
 
@@ -74,19 +76,19 @@ mobile{
 
     &__link{
         font-family: 'DM Sans';
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 18px;
-            color: #FFFFFF;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
     }
 
     &__links{
-    list-style: none;
+        list-style: none;
         display: flex;
         flex-direction: column;
         gap: 22px;
         margin-top: 19px;
-    padding-left: 0;
+        padding-left: 0;
     }
 
     &__item{
@@ -108,4 +110,27 @@ font-family: 'DM Sans';
         color: #D41443;
     }
 }
+}
+
+@media screen and (min-width:767px){
+    .mobile {
+        width: 254px;
+        min-height: 1020px;
+
+    }
+
+    .mobile__modal {
+        width: 254px;
+        min-height: 1020px;
+        }
+
+    .mobile__item{
+        padding-left:24px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .mobile,
+    .mobile__modal{
+        display: none;
+    }
 }

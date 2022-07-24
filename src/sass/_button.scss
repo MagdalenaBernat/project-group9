@@ -108,9 +108,11 @@
     
             &--mobile {
                 border-radius: 22px;
-                width: 209px;
+                width: 186px;
                 height: 44px;
                 padding-top:60px;
+                align-items: center;
+                margin: 0 auto;
             }
             &__header,
             &--white {
