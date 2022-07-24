@@ -16,16 +16,18 @@
         border-style: none;
         z-index: 4;
     }
-    &__mobile {
+    &--mobile {
         border-radius: 22px;
         width: 209px;
         height: 44px;
     }
-
+    &--mobile,
     &--white{
         background-color: #fff;
         border-color: #fff;
     }
+    &--mobile:hover,
+    &--mobile:focus,
     &--white:hover,
     &--white:focus{
         background: #ECEBEB;

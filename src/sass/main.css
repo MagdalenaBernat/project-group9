@@ -113,16 +113,16 @@
     border-style: none;
     z-index: 4;
   }
-  .button__mobile {
+  .button--mobile {
     border-radius: 22px;
     width: 209px;
     height: 44px;
   }
-  .button--white {
+  .button--mobile, .button--white {
     background-color: #fff;
     border-color: #fff;
   }
-  .button--white:hover, .button--white:focus {
+  .button--mobile:hover, .button--mobile:focus, .button--white:hover, .button--white:focus {
     background: #ECEBEB;
     border-color: #ECEBEB;
     fill: #D41443;
@@ -848,6 +848,10 @@ margin-bottom: 20px;
   pointer-events: none;
 }
 
+mobile__btn-icon {
+  width: 4px;
+  height: 8px;
+}
 mobile__menu {
   display: flex;
   justify-content: center;
