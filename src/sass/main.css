@@ -117,6 +117,8 @@
     border-radius: 22px;
     width: 209px;
     height: 44px;
+    align-items: center;
+    margin: 0 auto;
   }
   .button--mobile, .button--white {
     background-color: #fff;
@@ -868,6 +870,30 @@ mobile__link {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
+}
+mobile__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 19px;
+  padding-left: 0;
+}
+mobile__item {
+  border-top: 1px solid #E18298;
+  border-bottom: 1px solid #E18298;
+  padding: 21px 13px;
+}
+mobile__link {
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2857;
+  color: #FFFFFF;
+}
+mobile__link:hover, mobile__link:focus {
+  color: #D41443;
 }
 
 .section {

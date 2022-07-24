@@ -28,7 +28,6 @@
     right: 34px;
     border: none;
     background-color: transparent;
-
     cursor: pointer;
 }
 
@@ -80,4 +79,33 @@ mobile{
             line-height: 18px;
             color: #FFFFFF;
     }
+
+    &__links{
+    list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-top: 19px;
+    padding-left: 0;
+    }
+
+    &__item{
+        border-top: 1px solid #E18298;
+        border-bottom: 1px solid #E18298;
+        padding: 21px 13px;
+    }
+
+    &__link{
+text-decoration: none;
+font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2857;
+    color: #FFFFFF;
+    
+    &:hover,
+    &:focus{
+        color: #D41443;
+    }
+}
 }
