@@ -1,0 +1,34 @@
+// ===colors===
+
+$colors: (
+  'text-main': #ffa5ba,
+  'text-category': #d41443,
+  'text-description': #ffffff,
+  'text-info': #907e82,
+  'background-first': #ffb8ca,
+  'background-second': #f0d1a5,
+  'background-third': #c2e297,
+  'background-social': #fea5bb,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+// ===/colors===
+
+// ===fonts===
+
+$family-main: 'Titan One', cursive;
+$family-secondary: 'DM Sans', sans-serif;
+$fonts: (
+  'main-font': $family-main,
+  'secondary-font': $family-secondary,
+);
+
+@function getFont($key) {
+    @return map-get($fonts, $key);
+}
+
+// ===/fonts===
+
