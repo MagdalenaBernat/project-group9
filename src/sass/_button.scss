@@ -22,6 +22,7 @@
         height: 44px;
         align-items: center;
         margin: 0 auto;
+        
     }
     &--mobile,
     &--white{
@@ -110,15 +111,17 @@
                 border-radius: 22px;
                 width: 186px;
                 height: 44px;
-                padding-top:60px;
                 align-items: center;
                 margin: 0 auto;
             }
+            &--mobile,
             &__header,
             &--white {
                 background-color: #fff;
                 border-color: #fff;
             }
+            &--mobile:hover,
+            &--mobile:focus,
             &--header:hover,
             &--header:focus,
             &--white:hover,
