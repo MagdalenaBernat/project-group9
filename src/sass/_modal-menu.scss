@@ -1,0 +1,102 @@
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 
+    transform 1000ms, cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    visibility 1000ms cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal-navigation__button--open{
+    background-color: none;
+    fill: #D41443;
+}
+
+.modal-navigation{
+    width: 250px;
+    height: 502px;
+    position: absolute;
+    background-color: #E17992;
+    top: 0;
+    right: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 254px;
+        height: 1020px;
+      } 
+  }
+
+
+.modal-navigation__button--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    fill:#ffff;
+    background-color: #E17992;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-navigation__button--buy{
+    background-color: #FFFFFF;
+    color: #D41443;
+    font-family:$family-secondary ;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,31;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 209px;
+    height: 44px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:60px; 
+    margin-bottom: 19px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-navigation__icon--buy{
+    fill: #D41443;
+}
+
+.modal-navigation__list{
+    padding-left: 21px;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 24px;
+      } 
+}
+
+.modal-navigation__item{
+    font-family:$family-secondary ;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #FFFFFF;
+    list-style: none;
+    text-decoration: none;
+    border-bottom:1px solid #E18298;
+    border-top:1px solid #E18298;
+    height: 42px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:focus,
+    &:hover {
+      color:#D41443;
+    }
+  }
