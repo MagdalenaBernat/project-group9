@@ -3,7 +3,9 @@
 ul {
   padding-left: 0px;
 }
-body {margin: 0px;}
+body {
+  margin: 0px;
+}
 
 .container {
   padding-left: 20px;
@@ -16,48 +18,47 @@ body {margin: 0px;}
 .about {
   background-color: #fff5f6;
   width: 100%;
-  font-family: 'Titan One';}
-
-.about__small-tittle {
-  font-size: 18px;
-  line-height: 1.16em;
-  text-align: center;
-  text-transform: uppercase;
-  color: getColor(text-main);
   font-family: 'Titan One';
+
+  &__small-tittle {
+    font-size: 18px;
+    line-height: 1.16em;
+    text-align: center;
+    text-transform: uppercase;
+    color: getColor(text-main);
+    font-family: 'Titan One';
+  }
+  &__main-tittle {
+    text-transform: uppercase;
+    color: getColor(text-category);
+    font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.13em;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  &__cow {
+    width: calc(100% - 40px);
+  }
+  &__description {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &__text {
+    font-size: 12px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.64em;
+    letter-spacing: 0.04em;
+    color: #907e82;
+  }
+  &__text:nth-child(1) {
+    color: #000;
+  }
 }
 
-.about__main-tittle {
-  text-transform: uppercase;
-  color: getColor(text-category);
-  font-family: 'Titan One';
-  font-size: 34px;
-  line-height: 1.13em;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
-.about__cow {
-  width: calc(100% - 40px);
-}
-.about__description {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.about__text {
-  font-size: 12px;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.64em;
-  letter-spacing: 0.04em;
-  color: #907e82;
-}
-.about__text:nth-child(1) {
-  color: #000;
-}
-
-.button {
+.button--about {
   color: getColor(text-category);
   background-color: getColor(text-description);
   border-radius: 22px;
@@ -66,65 +67,67 @@ body {margin: 0px;}
   font-weight: 700;
   line-height: 1.28em;
   cursor: pointer;
-  padding: 10px 37px;
+  padding: 10px 37px;}
 
-  &__svg {
+  .button__svg {
     fill: getColor(text-category);
   }
-}
+
 
 .advantages {
   padding-left: 0px;
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__item:nth-child(1) {
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    font-family: 'Titan One';
+    margin-bottom: 16px;
+    margin-top: 16px;
+    color: getColor('text-category');
+  }
+  &__item:nth-child(2) {
+    font-family: 'DM Sans';
+    font-weight: 700;
+  }
+  &__item--first::before {
+    background-image: url('../images/icon1.png');
+    width: 33px;
+    height: 50px;
+    content: '';
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 39px;
+  }
+  &__item--second::before {
+    background-image: url('../images/icon3.png');
+    width: 50px;
+    height: 50px;
+    content: '';
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 39px;
+  }
+  &__item--third:before {
+    background-image: url('../images/icon2.png');
+    width: 44px;
+    height: 50px;
+    content: '';
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 39px;
+  }
 }
-.advantages__list {
-  list-style: none;
-}
-.advantages__item {
-  list-style: none;
-}
-
-.advantages__item:nth-child(1) {
-  font-size: 36px;
-  line-height: 41px;
-  letter-spacing: 0.04em;
-  font-family: 'Titan One';
-  margin-bottom: 16px;
-  margin-top: 16px;
-  color: getColor('text-category');
-}
-.advantages__item:nth-child(2) {
-  font-family: 'DM Sans';
-  font-weight: 700;
-}
-.advantages__item--first::before {
-  background-image: url('../images/icon1.png');
-  width: 33px;
-  height: 50px;
-  content: "";
-  display: block;
-  margin-bottom: 15px;
-  margin-top: 39px;
-}
-.advantages__item--second::before { background-image: url('../images/icon3.png');
-  width: 50px;
-  height: 50px;
-  content: "";
-  display: block;
-  margin-bottom: 15px;
-  margin-top: 39px;}
-
-.advantages__item--third:before { background-image: url('../images/icon2.png');
-  width: 44px;
-  height: 50px;
-  content: "";
-  display: block;
-  margin-bottom: 15px;
-  margin-top: 39px;}
 
 @media screen and (max-width: 550px) {
   .about__description {
     background-image: url(../images/milk-mobile.png);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 }
@@ -132,8 +135,7 @@ body {margin: 0px;}
   .about__description {
     background-image: url(../images/milk-mobile.png);
     background-repeat: no-repeat;
-    background-size:cover;
-  
+    background-size: cover;
   }
 }
 
@@ -166,9 +168,13 @@ body {margin: 0px;}
     font-size: 14px;
     line-height: 1.76em;
   }
-  .button {margin-top: 60px;}
-  .advantages {display: flex;
-  gap: 30px;}
+  .button--about {
+    margin-top: 60px;
+  }
+  .advantages {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
