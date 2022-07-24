@@ -1,0 +1,131 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__photo {
+      display: block;
+    }
+  }
+  .reviews__quote {
+    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+    max-width: 280px;
+    margin-top: 30px;
+    padding: 20px 50px 20px 50px;
+
+  @media screen and (min-width: 768px) {
+      max-width: 620px;
+
+      padding: 41px 34px 34px 34px;
+      margin-top: 25px;
+    }
+
+
+  @media screen and (min-width: 1280px) {
+
+      max-width: 926px;
+      padding: 47px 54px 32px 54px;
+      margin-top: 15px;
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+      background-image: url('../images/customer-review/quote.svg');
+      height: 40px;
+      width: 54px;
+      top: 28px;
+      left: 61px;
+    }
+
+      @media screen and (min-width: 768px) {
+        top: 24px;
+        left: 42px;
+
+      }
+  }   
+
+  .reviews__text {
+    position: relative;
+    font-size: 12px;
+    line-height: 30.6px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    z-index: 2;
+    padding: 0 16px 0 7px;
+    background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+
+
+
+    @media screen and (min-width: 768px) {
+
+      font-size: 14px;
+      padding: 0 44px 0 20px;
+      line-height: 30.4px;
+      background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+    }
+
+  @media screen and (min-width: 768px) {
+
+      font-size: 16px;
+      line-height: 29.8px;
+      padding: 0 35px 0 28px;
+      background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+    }
+
+  }
+
+  .reviews__dot {
+    margin: 0 auto;
+    flex-shrink: 0;
+    background-color: #c7133e;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    margin-top: 30px;
+
+
+
+    @media screen and (min-width: 768px) {
+      
+      margin-top: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+  
+      margin-top: 18px;
+    }
+
+  }
+
+  .reviews__name {
+    margin-top: 18px;
+    line-height: 186%;
+    text-align: center;
+
+
+    @media screen and (min-width: 768px) {
+      margin-top: 14px;
+      font-size: 16px;
+    }
+
+  @media screen and (min-width: 1280px) {
+      margin-top: 14px;
+      font-size: 16px;
+    }
+  }
+
+  .reviews__list {
+        display: flex;
+        gap: 18px;
+
+}
