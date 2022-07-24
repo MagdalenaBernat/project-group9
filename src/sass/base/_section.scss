@@ -1,5 +1,3 @@
-@import 'variables';
-
 .section {
     display: flex;
     justify-content: center;
@@ -10,6 +8,7 @@
     font-family: getFont('main-font');
     font-weight: 400;
     font-size: 18px;
+    text-transform: uppercase;
     color: getColor('text-main'); 
     }
 
@@ -17,6 +16,8 @@
     font-family: getFont('main-font');
     font-weight: 400;
     font-size: 34px;
+    margin-bottom: 144px;
+    text-transform: uppercase;
     color: getColor('text-category');
     }
 

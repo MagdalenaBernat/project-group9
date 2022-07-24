@@ -1,3 +1,5 @@
+// ===colors===
+
 $colors: (
     'text-main': #FFA5BA,
     'text-category': #D41443,
@@ -11,6 +13,9 @@ $colors: (
     @return map-get($colors, $key);
 }
 
+// ===/colors===
+
+// ===fonts===
 
 $family-main: 'Titan One', cursive;
 $family-secondary: 'DM Sans', sans-serif;
@@ -22,3 +27,5 @@ $fonts: (
 @function getFont($key) {
     @return map-get($fonts, $key);
 }
+
+// ===/fonts===

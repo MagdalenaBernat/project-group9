@@ -4,5 +4,10 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './section';
-@import './product-card';
+@import './base/section';
+@import './base/container';
+
+@import './components/grid';
+@import './components/product-card';
+
+@import './utils/variables';

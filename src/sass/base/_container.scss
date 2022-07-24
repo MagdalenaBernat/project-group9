@@ -1,0 +1,11 @@
+.container {
+    min-width: 270px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.full-container {
+    @extend .container;
+    width: 100%;
+}

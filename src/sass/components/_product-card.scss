@@ -1,0 +1,95 @@
+.product-card {
+    width: 280px;
+    height: 485px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--first {
+    background-color: getColor('background-first');
+    border-radius: 25px;
+    }
+
+    &--second {
+    background-color: getColor('background-second');
+    border-radius: 25px;
+    margin-top: 130px;
+    }
+
+    &--third {
+    background-color: getColor('background-third');
+    border-radius: 25px;
+    margin-top: 130px;
+    }
+
+
+    &__name {
+    font-family: getFont('main-font');
+    font-weight: 400;
+    font-size: 20px;
+    color: getColor('text-description'); 
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: -113px;
+    margin-bottom: 30px;
+    }
+
+    &__name--first::before {
+    content: "";
+    display: block;
+    width: 249px;
+    height: 252px;
+    margin-top: -113px;
+    margin-bottom: 22px;
+    background-image: url("/src/images/ice-cream1.png");
+    }
+
+    &__name--second::before {
+    content: "";
+    display: block;
+    width: 249px;
+    height: 252px;
+    margin-top: -113px;
+    margin-bottom: 22px;
+    background-image: url("./images/ice-cream2.png");
+    }
+
+    &__name--third::before {
+    content: "";
+    display: block;
+    width: 249px;
+    height: 252px;
+    margin-top: -113px;
+    margin-bottom: 22px;
+    background-image: url("./images/ice-cream3.png");
+    }
+
+    &__name::after {
+    content: "\00B7 \00B7 \00B7";
+    display: block;
+    color: getColor('text-description');
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 30px;
+    }
+
+    &__description {
+    max-width: 200px;
+    font-family: getFont('secondary-font');
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    // line-height: 21.28px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: getColor('text-description'); 
+    }
+
+    &__navigation {
+    padding-top: 30px;
+    }
+}
