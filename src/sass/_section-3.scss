@@ -24,13 +24,13 @@ body {
     line-height: 1.16em;
     text-align: center;
     text-transform: uppercase;
-    color: getColor(text-main);
-    font-family: getFont(family-main);
+    color: getColor('text-main');
+    font-family: getFont('main-font');
   }
   &__main-tittle {
     text-transform: uppercase;
-    color: getColor(text-category);
-    font-family: getFont(family-main);
+    color: getColor('text-category');
+    font-family: getFont('main-font');
     font-size: 34px;
     line-height: 1.13em;
     text-align: center;
@@ -45,7 +45,7 @@ body {
   }
   &__text {
     font-size: 12px;
-    font-family: 'DM Sans';
+    font-family: getFont('secondary-font');
     font-style: normal;
     font-weight: 500;
     line-height: 1.64em;
@@ -58,8 +58,8 @@ body {
 }
 
 .button--about {
-  color: getColor(text-category);
-  background-color: getColor(text-description);
+  color: getColor('text-category');
+  background-color: getColor('text-description');
   border-radius: 22px;
   border: none;
   font-size: 14px;
@@ -69,7 +69,7 @@ body {
   padding: 10px 37px;}
 
   .button__svg {
-    fill: getColor(text-category);
+    fill: getColor('text-category');
   }
 
 
@@ -85,13 +85,14 @@ body {
     font-size: 36px;
     line-height: 41px;
     letter-spacing: 0.04em;
-    font-family: getFont($family-main);
+    font-family: getFont('main-font');
+    font-weight: 700;
     margin-bottom: 16px;
     margin-top: 16px;
     color: getColor('text-category');
   }
   &__item:nth-child(2) {
-    font-family: getFont('family-secondary');
+    font-family: getFont('secondary-font');
     font-weight: 700;
   }
   &__item--first::before {
@@ -123,21 +124,12 @@ body {
   }
 }
 
-@media screen and (max-width: 550px) {
-  .about__description {
-    background-image: url(../images/milk-mobile.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 767px) {
-  .about__description {
-    background-image: url(../images/milk-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
+@media screen and (max-width: 767px), (min-width: 1200px)
+{.about {background-image: url(../images/milk-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;}}
+  
 @media screen and (min-width: 768px) {
   .about__container {
     padding-left: 40px;
@@ -196,9 +188,5 @@ body {
     padding-left: 74px;
     padding-right: 117px;
   }
-  .about__main-part {
-    background-image: url('../images/milk.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  
 }

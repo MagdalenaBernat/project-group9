@@ -24,10 +24,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFA5BA;
+  font-family: "Titan One", cursive;
 }
 .about__main-tittle {
   text-transform: uppercase;
   color: #D41443;
+  font-family: "Titan One", cursive;
   font-size: 34px;
   line-height: 1.13em;
   text-align: center;
@@ -42,7 +44,7 @@ body {
 }
 .about__text {
   font-size: 12px;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.64em;
@@ -82,11 +84,14 @@ body {
   font-size: 36px;
   line-height: 41px;
   letter-spacing: 0.04em;
+  font-family: "Titan One", cursive;
+  font-weight: 700;
   margin-bottom: 16px;
   margin-top: 16px;
   color: #D41443;
 }
 .advantages__item:nth-child(2) {
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
 }
 .advantages__item--first::before {
@@ -117,18 +122,12 @@ body {
   margin-top: 39px;
 }
 
-@media screen and (max-width: 550px) {
-  .about__description {
+@media screen and (max-width: 767px), (min-width: 1200px) {
+  .about {
     background-image: url(../images/milk-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 767px) {
-  .about__description {
-    background-image: url(../images/milk-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -187,10 +186,5 @@ body {
   .about__description {
     padding-left: 74px;
     padding-right: 117px;
-  }
-  .about__main-part {
-    background-image: url("../images/milk.png");
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 }/*# sourceMappingURL=main.css.map */
