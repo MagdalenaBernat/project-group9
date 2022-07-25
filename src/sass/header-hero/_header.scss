@@ -1,3 +1,13 @@
+.container {
+
+    &--pink{
+        position: relative;
+        background-color: #FFB8CA;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
 .header {
 
     &__menu {
@@ -9,38 +19,79 @@
         padding-top: 37px;
 
     }
-
-
 }
+
+.logo {
+    width: 199px;
+    height: 50px;
+}
+
+
 
 @media screen and (max-width: 767px) {
-.header {
-        &__navigation {
-            display: none;}
-        }
-}
+    .container {
 
-@media  screen and (min-width:768px) and (max-width:1199px) {
-    .header {
-        &__navigation {
-            display: none;
+        &--pink {
+    min-width: 320px;
+    max-width: 480px;
+    height: 502px;
+    padding: 0 20px;
         }
-                        &__btn-icon {
-                            width: 4px;
-                            height: 8px;
-            
-                        }
+    }
+
+.header {
+    &__navigation {
+        display: none;
     }
 }
 
-@media screen and (min-width:1200px){
-.header{
-    &__menu{
-    padding-right: 115px;
 }
-    &__navigation{
-    z-index: 2;
+
+@media screen and (min-width:768px) and (max-width:1199px){
+.container {
+
+        &--pink {
+        width: 768px;
+        height: 399px;
+        padding: 0 34px;
+        }
+    }
+
+.header {
+    &__navigation {
+        display: none;
+    }
+
+    &__btn-icon {
+        width: 4px;
+        height: 8px;
+
+    }
 }
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+.container {
+    
+    &--pink {
+        width: 1280px;
+        height: 665px;
+        padding: 0;
+    }
+}
+
+.header {
+    &__menu {
+        padding-right: 115px;
+    }
+
+    &__navigation {
+        z-index: 2;
+    }
+
     &__list {
         display: flex;
         list-style: none;
@@ -49,10 +100,10 @@
         justify-content: space-between;
         gap: 35px;
         align-items: center;
-    
-}
 
-    &__link{
+    }
+
+    &__link {
         text-decoration: none;
         font-family: 'DM Sans';
         font-style: normal;
@@ -70,10 +121,15 @@
         color: #D41443;
     }
 
-    &__btn-icon{
+    &__btn-icon {
         width: 4px;
         height: 8px;
 
     }
 }
+
+.logo {
+    padding-left: 46px;
+}
+
 }
