@@ -1,10 +1,10 @@
 @media screen and (max-width:767px) {
 
-    .button__header {
-        display: none;
-    }
+.button__header {
+    display: none;
+}
 
-        .button {
+.button {
     &--mobile,
     &--white,
     &--red {
@@ -15,17 +15,23 @@
         gap: 12px;
         border-style: none;
         z-index: 4;
+        cursor: pointer;
     }
-                &__mobile {
-                    border-radius: 22px;
-                    width: 209px;
-                    height: 44px;
-                }
-
+    &--mobile {
+        border-radius: 22px;
+        width: 209px;
+        height: 44px;
+        align-items: center;
+        margin: 0 auto;
+        
+    }
+    &--mobile,
     &--white{
         background-color: #fff;
         border-color: #fff;
     }
+    &--mobile:hover,
+    &--mobile:focus,
     &--white:hover,
     &--white:focus{
         background: #ECEBEB;
@@ -33,20 +39,20 @@
         fill: #D41443;
     }
 
-&--red {
-    background: #D41443;
-    border-color: #D41443;
+    &--red {
+        background: #D41443;
+        border-color: #D41443;
 
-    &:hover,
-    &:focus {
+        &:hover,
+        &:focus {
         background: #C7133E;
         border-color: #C7133E;
+        }
     }
-}
-                &--white,
-                &--red {
-                    border-radius: 20px;
-                    height: 24px;
+    &--white,
+    &--red {
+        border-radius: 20px;
+        height: 24px;
                 }
 }
 .button__title--header,
@@ -100,21 +106,26 @@
                 gap: 12px;
                 border-style: none;
                 z-index: 4;
+                cursor: pointer;
             }
     
-            &__mobile {
+            &--mobile {
                 border-radius: 22px;
-                width: 209px;
+                width: 186px;
                 height: 44px;
-                
+                align-items: center;
+                margin: 0 auto;
             }
+            &--mobile,
             &__header,
             &--white {
                 background-color: #fff;
                 border-color: #fff;
             }
-            &--header:hover,
-            &--header:focus,
+            &--mobile:hover,
+            &--mobile:focus,
+            &__header:hover,
+            &__header:focus,
             &--white:hover,
             &--white:focus {
                 background: #ECEBEB;
@@ -204,6 +215,7 @@
             gap: 12px;
             border-style: none;
             z-index: 4;
+            cursor: pointer;
         }
 
         &__header,
