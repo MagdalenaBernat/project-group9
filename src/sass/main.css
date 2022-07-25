@@ -6,7 +6,7 @@ body {
   margin: 0px;
 }
 
-.container {
+.about__container {
   padding-left: 20px;
   padding-right: 20px;
   width: calc(100% - 40px);
@@ -17,7 +17,6 @@ body {
 .about {
   background-color: #fff5f6;
   width: 100%;
-  font-family: "Titan One";
 }
 .about__small-tittle {
   font-size: 18px;
@@ -25,12 +24,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFA5BA;
-  font-family: "Titan One";
 }
 .about__main-tittle {
   text-transform: uppercase;
   color: #D41443;
-  font-family: "Titan One";
   font-size: 34px;
   line-height: 1.13em;
   text-align: center;
@@ -85,13 +82,11 @@ body {
   font-size: 36px;
   line-height: 41px;
   letter-spacing: 0.04em;
-  font-family: "Titan One";
   margin-bottom: 16px;
   margin-top: 16px;
   color: #D41443;
 }
 .advantages__item:nth-child(2) {
-  font-family: "DM Sans";
   font-weight: 700;
 }
 .advantages__item--first::before {
@@ -137,7 +132,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .about__container {
     padding-left: 40px;
     padding-right: 40px;
     width: calc(100% - 80px);
@@ -174,7 +169,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .about__container {
     padding-left: 114px;
     padding-right: 114px;
     width: calc(100% - 228px);
