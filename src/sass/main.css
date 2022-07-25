@@ -74,6 +74,9 @@ body {
 .advantages {
   padding-left: 0px;
 }
+.advantages__header {
+  display: none;
+}
 .advantages__list {
   list-style: none;
 }
