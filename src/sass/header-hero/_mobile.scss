@@ -118,15 +118,12 @@
 
 @media screen and (min-width:767px){
     .mobile__modal {
-            position: absolute;
             right: -70px;
             top: 50%;
-            transform: translate(-50%, -50%);
             width: 250px;
             min-height: 502px;
-            background-color: getColor('mobileColor');
-    
-        }
+    }
+
     .mobile {
         width: 254px;
         min-height: 1020px;

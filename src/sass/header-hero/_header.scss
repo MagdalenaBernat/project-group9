@@ -31,15 +31,15 @@
 
 
 @media screen and (max-width: 767px) {
-    .container {
+.container {
 
-        &--pink {
-    min-width: 320px;
-    max-width: 480px;
-    height: 502px;
-    padding: 0 20px;
-        }
+    &--pink {
+        min-width: 320px;
+        max-width: 480px;
+        height: 502px;
+        padding: 0 20px;
     }
+}
 
 .header {
     &__navigation {
