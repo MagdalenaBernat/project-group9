@@ -1,11 +1,3 @@
-@import './variables';
-
-ul {
-  padding-left: 0px;
-}
-body {
-  margin: 0px;
-}
 
 .about__container {
   padding-left: 20px;
@@ -57,7 +49,7 @@ body {
   }
 }
 
-.button--about {
+.about__button {
   color: getColor('text-category');
   background-color: getColor('text-description');
   border-radius: 22px;
@@ -68,7 +60,7 @@ body {
   cursor: pointer;
   padding: 10px 37px;}
 
-  .button__svg {
+  .about__svg {
     fill: getColor('text-category');
   }
 
@@ -160,7 +152,7 @@ body {
     font-size: 14px;
     line-height: 1.76em;
   }
-  .button--about {
+  .about__button {
     margin-top: 60px;
   }
   .advantages {
