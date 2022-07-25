@@ -1,61 +1,61 @@
+@import '../utils/variables';
+
 .icecream {
-    background-color: #FFA5BA;
+    background-color: getColor('text-main');
     border-radius: 50%;
-    border-color: #FFA5BA;
+    border-color: getColor('text-main');
     width: 538px;
     height: 538px;
 }
 
 @media screen and (max-width: 767px){
-    .hero {
-            display: flex;
-            flex-wrap: wrap;
+.hero {
+    display: flex;
+    flex-wrap: wrap;
 
     
-            &__header {
-                padding-top: 137px;
-                z-index: 4;
-            }
+    &__header {
+        padding-top: 137px;
+        z-index: 4;
+    }
 
-                        &__title {
-                            display: block;
-                            max-width: 218px;
-                            font-family: 'Titan One';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 26px;
-                            line-height: 1.1538;
-                            letter-spacing: 0.04em;
-                            text-transform: uppercase;
-                            color: #FFFFFF;
-                            margin:0;
-                            z-index: 4;
+    &__title {
+        display: block;
+        max-width: 218px;
+        font-family: getFont('main-font');
+        font-size: 26px;
+        line-height: 1.1538;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: getColor('text-description');
+        margin:0;
+        z-index: 4;
                         
-                        &--red{
-                            font-size: 48px;
-                        }
-                        
-                        }
-&__links {
+        &--red{
+            font-size: 48px;
+        }
+    }
+
+    &__links {
         display: flex;
         flex-direction: row;
         gap: 9px;
         z-index: 4;
     }
-&__link {
-    text-decoration: none;
-    z-index: 4;
-}
 
-&__img {
-    position: absolute;
+    &__link {
+        text-decoration: none;
+        z-index: 4;
+    }
 
-}
+    &__img {
+        position: absolute;
+    }
 
-&__ice {
-    background-color: #FFA5BA;
+    &__ice {
+    background-color: getColor('text-main');
     border-radius: 50%;
-    border-color: #FFA5BA;
+    border-color: getColor('text-main');
     width: 346px;
     height: 344px;
     margin-left: 36px;
@@ -63,7 +63,7 @@
     margin-bottom: 100px;
     margin-right: -100px;
     z-index: 0;
-}
+    }
 
 &__lokals,
 &__eco{
@@ -101,8 +101,8 @@
 
     &--mobile,
     &--white {
-        background-color: #fff;
-        border-color: #fff;
+        background-color: getColor('text-description');
+        border-color: getColor('text-description');
     }
 
     &--mobile:hover,
@@ -111,12 +111,12 @@
     &--white:focus {
         background: #ECEBEB;
         border-color: #ECEBEB;
-        fill: #D41443;
+        fill: getColor('text-category');
     }
 
     &--red {
-        background: #D41443;
-        border-color: #D41443;
+        background: getColor('text-category');
+        border-color: getColor('text-category');
 
         &:hover,
         &:focus {
@@ -135,7 +135,7 @@
 .button__title--header,
 .button__title--white,
 .button__title--red {
-    font-family: 'DM Sans';
+    font-family: getFont('secondary-font');
     line-height: 1.3125;
     display: flex;
     align-items: center;
@@ -145,18 +145,18 @@
 }
 
 .button__title--white {
-    color: #FFFFFF;
+    color: getColor('text-description');
 
 }
 
 .button__title--red {
-    color: #D41443;
+    color: getColor('text-category');
 
 }
 
 .button__title--header {
     font-weight: 700;
-    color: #D41443;
+    color: getColor('text-category');
     font-size: 16px;
 }
 
@@ -189,14 +189,12 @@
     &__title {
         display: block;
         max-width: 162px;
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
+        font-family: getFont('main-font');
         font-size: 22px;
         line-height: 1.16;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: getColor('text-description');
 
         &--red {
             font-size: 34px;
@@ -218,9 +216,9 @@
     }
         
     &__ice {
-        background-color: #FFA5BA;
+        background-color: getColor('text-main');
         border-radius: 50%;
-        border-color: #FFA5BA;
+        border-color: getColor('text-main');
         width: 324px;
         height: 322px;
         margin-left: 110px;
@@ -246,7 +244,7 @@
                 
     &__box--next,
     &__box {
-        background-color: #FFFFFF;
+        background-color: getColor('text-description');
         border-radius: 50%;
         width: 16px;
         height: 16px;
@@ -262,11 +260,11 @@
     }
                 
     &__nr {
-        font-family: 'Titan One';
+        font-family: getFont('main-font');
         font-size: 28px;
         line-height: 1.14;
         letter-spacing: 0.04em;
-        color: #D41443;
+        color: getColor('text-category');
         margin: 0;
         width: 33px;
         height: 32px;
@@ -274,10 +272,10 @@
     }
                 
     &__name {
-        font-family: 'DM Sans';
+        font-family: getFont('secondary-font');
         font-size: 8px;
         line-height: 1.25;
-        color: #FFFFFF;
+        color: getColor('text-description');
         margin: 0;
         padding-left: 10px;
         width: 54px;
@@ -294,9 +292,9 @@
     }
 
     &__eco--title {
-        font-family: 'DM Sans';
+        font-family: getFont('secondary-font');
         font-size: 8px;
-        color: #FFFFFF;
+        color: getColor('text-description');
         margin-top: -50px;
         width: 114px;
         z-index: 4;
@@ -337,8 +335,8 @@
     &--mobile,
     &__header,
     &--white {
-        background-color: #fff;
-        border-color: #fff;
+        background-color: getColor('text-description');
+        border-color: getColor('text-description');
     }
 
     &--mobile:hover,
@@ -349,12 +347,12 @@
     &--white:focus {
         background: #ECEBEB;
         border-color: #ECEBEB;
-        fill: #D41443;
+        fill: getColor('text-category');
     }
 
     &--red {
-        background: #D41443;
-        border-color: #D41443;
+        background: getColor('text-category');
+        border-color: getColor('text-category');
 
         &:hover,
         &:focus {
@@ -376,8 +374,8 @@
     }
 
     &--circle {
-        background-color: #FFB8CA;
-        border-color: #FFB8CA;
+        background-color: getColor('background-first');
+        border-color: getColor('background-first');
         border-style: none;
         width: 18px;
         height: 18px;
@@ -387,7 +385,7 @@
 .button__title--header,
 .button__title--white,
 .button__title--red {
-    font-family: 'DM Sans';
+    font-family: getFont('secondary-font');
     line-height: 1.3125;
     display: flex;
     align-items: center;
@@ -397,18 +395,18 @@
 }
 
 .button__title--white {
-    color: #FFFFFF;
+    color: getColor('text-description');
 
 }
 
 .button__title--red {
-    color: #D41443;
+    color: getColor('text-category');
 
 }
 
 .button__title--header {
     font-weight: 700;
-    color: #D41443;
+    color: getColor('text-category');
     font-size: 16px;
 }
 
@@ -457,14 +455,12 @@
     &__title {
         display: block;
         max-width: 277px;
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
+        font-family: getFont('main-font');
         font-size: 38px;
         line-height: 1.16;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: getColor('text-description');
 
         &--red {
             font-size: 58px;
@@ -486,9 +482,9 @@
     }
         
     &__ice {
-        background-color: #FFA5BA;
+        background-color: getColor('text-main');
         border-radius: 50%;
-        border-color: #FFA5BA;
+        border-color: getColor('text-main');
         width: 538px;
         height: 538px;
         margin-left: 450px;
@@ -518,7 +514,7 @@
         
     &__box--next,
     &__box {
-        background-color: #FFFFFF;
+        background-color: getColor('text-description');
         border-radius: 50%;
         width: 30px;
         height: 30px;
@@ -534,23 +530,21 @@
     }
         
     &__nr {
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
+        font-family: getFont('main-font');
         font-size: 46px;
         line-height: 53px;
         letter-spacing: 0.04em;
-        color: #D41443;
+        color: getColor('text-category');
         margin: 0;
         width: 72px;
         height: 57px;
     }
         
     &__name {
-        font-family: 'DM Sans';
+        font-family: getFont('secondary-font');
         font-size: 14px;
         line-height: 18px;
-        color: #FFFFFF;
+        color: getColor('text-description');
         margin: 0;
         padding-left: 90px;
     }
@@ -564,12 +558,12 @@
     }
         
     &__eco--title {
-        font-family: 'DM Sans';
+        font-family: getFont('secondary-font');
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        color: #FFFFFF;
+        color: getColor('text-description');
         margin-top: -100px;
         width: 200px;
         z-index: 4;
@@ -619,8 +613,8 @@
 
     &__header,
     &--white {
-        background-color: #fff;
-        border-color: #fff;
+        background-color: getColor('text-description');
+        border-color: getColor('text-description');
     }
 
     &--header:hover,
@@ -629,12 +623,12 @@
     &--white:focus {
         background: #ECEBEB;
         border-color: #ECEBEB;
-        fill: #D41443;
+        fill: getColor('text-category');
     }
 
     &--red {
-        background: #D41443;
-        border-color: #D41443;
+        background: getColor('text-category');
+        border-color: getColor('text-category');
 
         &:hover,
         &:focus {
@@ -644,8 +638,8 @@
     }
 
     &--circle {
-        background-color: #FFB8CA;
-        border-color: #FFB8CA;
+        background-color: getColor('background-first');
+        border-color: getColor('background-first');
         border-style: none;
         width: 26px;
         height: 26px;
@@ -654,27 +648,27 @@
 }
 
 .button__title--header {
-    font-family: 'DM Sans';
+    font-family: getFont('secondary-font');
     font-weight: 700;
     font-size: 16px;
     line-height: 1.3125;
-    color: #D41443;
+    color: getColor('text-category');
 }
 
 .button__title--white,
 .button__title--red {
-    font-family: 'DM Sans';
+    font-family: getFont('secondary-font');
     font-size: 14px;
     line-height: 1.286;
 }
 
 .button__title--white {
-    color: #FFFFFF;
+    color: getColor('text-description');
 
 }
 
 .button__title--red {
-    color: #D41443;
+    color: getColor('text-category');
 
 }
 
