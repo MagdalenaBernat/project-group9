@@ -11,6 +11,8 @@ $colors: (
   'background-social': #fea5bb,
 );
 
+
+
 @function getColor($key) {
   @return map-get($colors, $key);
 }
