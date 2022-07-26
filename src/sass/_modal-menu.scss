@@ -18,14 +18,14 @@
 }
 .modal-navigation__button--open{
     background-color: none;
-    fill: #D41443;
+    fill: getColor('text-category');
 }
 
 .modal-navigation{
     width: 250px;
     height: 502px;
     position: absolute;
-    background-color: #E17992;
+    background-color: getColor('background-modal');
     top: 0;
     right: 0;
 
@@ -40,16 +40,16 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    fill:#ffff;
-    background-color: #E17992;
+    fill:getColor('text-description');
+    background-color:getColor('background-modal');
     margin-left: auto;
     cursor: pointer;
     border: none;
 }
 
 .modal-navigation__button--buy{
-    background-color: #FFFFFF;
-    color: #D41443;
+    background-color: getColor('text-description');
+    color: getColor('text-category');
     font-family:$family-secondary ;
     font-weight: 700;
     font-size: 16px;
@@ -71,7 +71,7 @@
 }
 
 .modal-navigation__icon--buy{
-    fill: #D41443;
+    fill:getColor('text-category');
 }
 
 .modal-navigation__list{
@@ -87,16 +87,16 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
-    color: #FFFFFF;
+    color: getColor('text-description');
     list-style: none;
     text-decoration: none;
-    border-bottom:1px solid #E18298;
-    border-top:1px solid #E18298;
+    border-bottom:1px solid getColor('background-modal');
+    border-top:1px solid getColor('background-modal');
     height: 42px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     &:focus,
     &:hover {
-      color:#D41443;
+      color:getColor('text-category');
     }
   }
