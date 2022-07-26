@@ -1,3 +1,5 @@
+@import '../utils/_variables.scss';
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -16,7 +18,7 @@
     
     margin-left: auto;
     margin-right: auto;
-    background-color: #fafafa;
+    background-color: getColor('reviews-first');
     max-width: 280px;
     margin-top: 30px;
     padding: 20px 50px 20px 50px;
@@ -62,7 +64,7 @@
     letter-spacing: 0.04em;
     z-index: 2;
     padding: 0 16px 0 7px;
-    background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+    background-image: repeating-linear-gradient(to top, getColor('reviews-second'), transparent 1px 31px);
 
 
 
@@ -71,7 +73,8 @@
       font-size: 14px;
       padding: 0 44px 0 20px;
       line-height: 30.4px;
-      background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+      background-image: repeating-linear-gradient(to top, getColor('reviews-second'), transparent 1px 31px);
+
     }
 
   @media screen and (min-width: 768px) {
@@ -79,7 +82,8 @@
       font-size: 16px;
       line-height: 29.8px;
       padding: 0 35px 0 28px;
-      background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+      background-image: repeating-linear-gradient(to top, getColor('reviews-second'), transparent 1px 31px);
+
     }
 
   }
@@ -87,7 +91,7 @@
   .reviews__dot {
     margin: 0 auto;
     flex-shrink: 0;
-    background-color: #c7133e;
+    background-color: getColor('reviews-third');
     border-radius: 50%;
     width: 4px;
     height: 4px;
