@@ -1,6 +1,8 @@
+@import '../utils/_variables.scss';
+
 .product-card {
     width: 100%;
-    height: 485px;
+    height: 525px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,26 +16,26 @@
     &--second {
     background-color: getColor('background-second');
     border-radius: 25px;
-    margin-top: 130px;
+    margin-top: 220px;
     }
 
     &--third {
     background-color: getColor('background-third');
     border-radius: 25px;
-    margin-top: 130px;
+    margin-top: 480px;
     }
 
     .product-card__name {
     font-family: getFont('main-font');
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     color: getColor('text-description'); 
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: -113px;
+    margin-top: -10px;
     margin-bottom: 30px;
     }
 
@@ -44,7 +46,7 @@
     height: 252px;
     margin-top: -113px;
     margin-bottom: 22px;
-    background-image: url("/src/images/ice-cream1.png");
+    background-image: url("../images/ice-cream.png");
     }
 
     &__name--second::before {
@@ -54,7 +56,7 @@
     height: 252px;
     margin-top: -113px;
     margin-bottom: 22px;
-    background-image: url("/src/images/ice-cream2.png");
+    background-image: url("../images/ice_coffee.png");
     }
 
     &__name--third::before {
@@ -64,7 +66,7 @@
     height: 252px;
     margin-top: -113px;
     margin-bottom: 22px;
-    background-image: url("/src/images/ice-cream3.png");
+    background-image: url("../images/milkshakes.png");
     }
 
     &__name::after {
@@ -86,11 +88,14 @@
     text-align: center;
     color: getColor('text-description'); 
     }
-
-    &__navigation {
-    padding-top: 30px;
-    }
 }
+
+.direction-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
     @media screen and (min-width: 1200px) {
     
@@ -99,22 +104,30 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
-                margin-left: 117px;
-                margin-right: 116px;
+                margin-right: 115px;
+                width: 100%;
     
                 &--first {
-                    width: 100%;
                     height: 525px;
+                    width: 330px;
                     margin-right: 29px;
                 }
 
                 &--second,
                 &--third {
-                    width: 100%;
                     height: 525px;
+                    width: 330px;
                     margin-right: 29px;
                     margin-top: 0;
                 }
+
+                &__descriptiom {
+                max-width: 241px;
+                }
+            }
+
+            .product-card__name {
+            font-size: 30px;
             }
         }
     
@@ -140,6 +153,10 @@
                     height: 485px;
                     margin: 20px;
                     margin-top: 0;
+                }
+
+                &__descriptiom {
+                max-width: 241px;
                 }
             }
         }
