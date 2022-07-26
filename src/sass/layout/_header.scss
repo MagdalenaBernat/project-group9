@@ -1,10 +1,10 @@
-@import '../utils/_variables.scss';
+@import '../utils/variables';
 
 .container {
 
     &--pink{
         position: relative;
-        background-color: #FFB8CA;
+        background-color: getColor('background-first');
         margin: 0 auto;
         padding: 0;
     }
@@ -31,15 +31,15 @@
 
 
 @media screen and (max-width: 767px) {
-    .container {
+.container {
 
-        &--pink {
-    min-width: 320px;
-    max-width: 480px;
-    height: 502px;
-    padding: 0 20px;
-        }
+    &--pink {
+        min-width: 320px;
+        max-width: 480px;
+        height: 502px;
+        padding: 0 20px;
     }
+}
 
 .header {
     &__navigation {
@@ -52,12 +52,12 @@
 @media screen and (min-width:768px) and (max-width:1199px){
 .container {
 
-        &--pink {
+    &--pink {
         width: 768px;
         height: 399px;
         padding: 0 34px;
-        }
     }
+}
 
 .header {
     &__navigation {
@@ -107,20 +107,20 @@
 
     &__link {
         text-decoration: none;
-        font-family: 'DM Sans';
+        font-family: getFont('secondary-font');
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.3125;
         display: flex;
         align-items: center;
-        color: #FFFFFF;
+        color: getColor('text-description');
 
     }
 
     &__link:hover,
     &__link:focus {
-        color: #D41443;
+        color: getColor('text-category');
     }
 
     &__btn-icon {
