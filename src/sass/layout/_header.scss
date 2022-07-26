@@ -1,14 +1,5 @@
 @import '../utils/variables';
 
-.container {
-
-    &--pink{
-        position: relative;
-        background-color: getColor('background-first');
-        margin: 0 auto;
-        padding: 0;
-    }
-}
 
 .header {
 
@@ -31,15 +22,6 @@
 
 
 @media screen and (max-width: 767px) {
-.container {
-
-    &--pink {
-        min-width: 320px;
-        max-width: 480px;
-        height: 502px;
-        padding: 0 20px;
-    }
-}
 
 .header {
     &__navigation {
@@ -50,14 +32,6 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1199px){
-.container {
-
-    &--pink {
-        width: 768px;
-        height: 399px;
-        padding: 0 34px;
-    }
-}
 
 .header {
     &__navigation {
@@ -76,14 +50,6 @@
 
 
 @media screen and (min-width:1200px) {
-.container {
-    
-    &--pink {
-        width: 1280px;
-        height: 665px;
-        padding: 0;
-    }
-}
 
 .header {
     &__menu {
