@@ -914,7 +914,7 @@
   height: 252px;
   margin-top: -113px;
   margin-bottom: 22px;
-  background-image: url("../images/ice-cream1.png");
+  background-image: url("../images/ice-cream.png");
 }
 .product-card__name--second::before {
   content: "";
@@ -923,7 +923,7 @@
   height: 252px;
   margin-top: -113px;
   margin-bottom: 22px;
-  background-image: url("../images/ice-cream2.png");
+  background-image: url("../images/ice_coffee.png");
 }
 .product-card__name--third::before {
   content: "";
@@ -932,7 +932,7 @@
   height: 252px;
   margin-top: -113px;
   margin-bottom: 22px;
-  background-image: url("../images/ice-cream3.png");
+  background-image: url("../images/milkshakes.png");
 }
 .product-card__name::after {
   content: "···";
