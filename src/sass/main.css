@@ -1203,6 +1203,9 @@ ul {
     margin: 20px;
   }
 }
+.header {
+  overflow-x: hidden;
+}
 .header__menu {
   display: flex;
   max-height: 90px;
