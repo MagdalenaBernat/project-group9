@@ -1,17 +1,17 @@
-@import '../utils/_variables.scss';
+@import '../utils/variables';
 
 @media screen and (max-width:1199px) {
 .mobile-menu{
     &__button{
         background-color: rgba(0,0,0,0);
         border: none;
-}
+    }
     
 
-&__icon{
-    width: 22px;
+    &__icon{
+        width: 22px;
         height: 12px;
-        fill:#D41443;
+        fill:getColor('text-category');
         cursor: pointer;
 }
 }
