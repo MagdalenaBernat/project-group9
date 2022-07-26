@@ -29,19 +29,19 @@
   flex-direction: column;
 }
 .section__header-main {
-  font-family: getFont("main-font");
+  font-family: "Titan One", cursive;
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
-  color: getColor("text-main");
+  color: #ffa5ba;
 }
 .section__header-category {
-  font-family: getFont("main-font");
+  font-family: "Titan One", cursive;
   font-weight: 400;
   font-size: 34px;
   margin-bottom: 144px;
   text-transform: uppercase;
-  color: getColor("text-category");
+  color: #d41443;
 }
 
 .reviews {
@@ -881,24 +881,24 @@
   flex-direction: column;
 }
 .product-card--first {
-  background-color: getColor("background-first");
+  background-color: #ffb8ca;
   border-radius: 25px;
 }
 .product-card--second {
-  background-color: getColor("background-second");
+  background-color: #f0d1a5;
   border-radius: 25px;
   margin-top: 130px;
 }
 .product-card--third {
-  background-color: getColor("background-third");
+  background-color: #c2e297;
   border-radius: 25px;
   margin-top: 130px;
 }
 .product-card .product-card__name {
-  font-family: getFont("main-font");
+  font-family: "Titan One", cursive;
   font-weight: 400;
   font-size: 20px;
-  color: getColor("text-description");
+  color: #ffffff;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -937,20 +937,20 @@
 .product-card__name::after {
   content: "···";
   display: block;
-  color: getColor("text-description");
+  color: #ffffff;
   font-weight: 400;
   font-size: 20px;
   padding-top: 30px;
 }
 .product-card__description {
   max-width: 200px;
-  font-family: getFont("secondary-font");
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   letter-spacing: 0.04em;
   text-align: center;
-  color: getColor("text-description");
+  color: #ffffff;
 }
 .product-card__navigation {
   padding-top: 30px;
@@ -1098,7 +1098,7 @@ ul {
 }
 .button--location {
   background-color: #d41342;
-  color: getColor("text-description");
+  color: #ffffff;
   border: none;
   height: 44px;
   border-radius: 22px;
@@ -1109,7 +1109,7 @@ ul {
 }
 .button--franchise {
   background-color: #fff;
-  color: getColor("text-category");
+  color: #d41443;
   border: none;
   height: 44px;
   border-radius: 22px;
@@ -1166,12 +1166,11 @@ ul {
   text-align: right;
   margin-top: 46px;
   margin-bottom: 43px;
-  font-family: getFont("family-secondary");
   font-weight: 700;
   font-size: 12px;
 }
 .contact-mini__link {
-  color: getColor("text-category");
+  color: #d41443;
 }
 
 .copyright {
@@ -1181,7 +1180,7 @@ ul {
   border-top: 1px solid #e1e1e1;
 }
 .copyright__text {
-  color: getColor("text-info");
+  color: #907e82;
   font-weight: 700;
   font-size: 14px;
   width: 150px;
