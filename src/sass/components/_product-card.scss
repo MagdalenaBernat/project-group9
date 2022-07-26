@@ -28,7 +28,7 @@
     .product-card__name {
     font-family: getFont('main-font');
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     color: getColor('text-description'); 
     text-transform: uppercase;
     display: flex;
@@ -105,20 +105,29 @@
                 flex-direction: row;
                 justify-content: flex-start;
                 margin-right: 115px;
+                width: 100%;
     
                 &--first {
-                    width: 100%;
                     height: 525px;
+                    width: 330px;
                     margin-right: 29px;
                 }
 
                 &--second,
                 &--third {
-                    width: 100%;
                     height: 525px;
+                    width: 330px;
                     margin-right: 29px;
                     margin-top: 0;
                 }
+
+                &__descriptiom {
+                max-width: 241px;
+                }
+            }
+
+            .product-card__name {
+            font-size: 30px;
             }
         }
     
@@ -144,6 +153,10 @@
                     height: 485px;
                     margin: 20px;
                     margin-top: 0;
+                }
+
+                &__descriptiom {
+                max-width: 241px;
                 }
             }
         }
