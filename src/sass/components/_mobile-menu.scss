@@ -1,0 +1,23 @@
+@media screen and (max-width:1199px) {
+.mobile-menu{
+    &__button{
+        background-color: rgba(0,0,0,0);
+        border: none;
+}
+    
+
+&__icon{
+    width: 22px;
+        height: 12px;
+        fill:#D41443;
+        cursor: pointer;
+
+}
+}
+}
+
+@media screen and (min-width:1200px) {
+    .mobile-menu {
+        display: none;
+    }
+}
