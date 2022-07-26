@@ -44,7 +44,7 @@
     height: 252px;
     margin-top: -113px;
     margin-bottom: 22px;
-    background-image: url("/src/images/ice-cream1.png");
+    background-image: url("../images/ice-cream1.png");
     }
 
     &__name--second::before {
@@ -54,7 +54,7 @@
     height: 252px;
     margin-top: -113px;
     margin-bottom: 22px;
-    background-image: url("/src/images/ice-cream2.png");
+    background-image: url("../images/ice-cream2.png");
     }
 
     &__name--third::before {
@@ -64,7 +64,7 @@
     height: 252px;
     margin-top: -113px;
     margin-bottom: 22px;
-    background-image: url("/src/images/ice-cream3.png");
+    background-image: url("../images/ice-cream3.png");
     }
 
     &__name::after {
@@ -91,6 +91,13 @@
     padding-top: 30px;
     }
 }
+
+.direction-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
     @media screen and (min-width: 1200px) {
     
