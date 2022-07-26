@@ -73,8 +73,8 @@
             &__mobile:focus,
             &__about:hover,
             &__about:focus {
-                background: #ECEBEB;
-                border-color: #ECEBEB;
+                background: getColor('bgHover');
+                border-color: getColor('bgHover');
                 fill: getColor('text-category');
             }
     
@@ -84,8 +84,8 @@
     
                 &:hover,
                 &:focus {
-                    background: #C7133E;
-                    border-color: #C7133E;
+                    background: getColor('bgFocus');
+                    border-color: getColor('bgFocus');
                 }
             }
     
@@ -160,8 +160,8 @@
             &__header:focus,
             &__about:hover,
             &__about:focus {
-                background: #ECEBEB;
-                border-color: #ECEBEB;
+                background: getColor('bgHover');
+                border-color: getColor('bgHover');
                 fill: getColor('text-category');
             }
     
@@ -171,8 +171,8 @@
     
                 &:hover,
                 &:focus {
-                    background: #C7133E;
-                    border-color: #C7133E;
+                    background: getColor('bgFocus');
+                    border-color: getColor('bgFocus');
                 }
             }
     
@@ -279,8 +279,8 @@
         &__header:focus,
         &__about:hover,
         &__about:focus {
-            background: #ECEBEB;
-            border-color: #ECEBEB;
+            background: getColor('bgHover');
+            border-color: getColor('bgHover');
             fill: getColor('text-category');
         }
 
@@ -290,8 +290,8 @@
 
             &:hover,
             &:focus {
-                background: #C7133E;
-                border-color: #C7133E;
+                background: getColor('bgFocus');
+                border-color: getColor('bgFocus');
             }
         }
     }
