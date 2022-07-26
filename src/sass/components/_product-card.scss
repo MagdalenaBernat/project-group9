@@ -2,7 +2,7 @@
 
 .product-card {
     width: 100%;
-    height: 485px;
+    height: 525px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +16,13 @@
     &--second {
     background-color: getColor('background-second');
     border-radius: 25px;
-    margin-top: 130px;
+    margin-top: 220px;
     }
 
     &--third {
     background-color: getColor('background-third');
     border-radius: 25px;
-    margin-top: 130px;
+    margin-top: 480px;
     }
 
     .product-card__name {
@@ -88,10 +88,6 @@
     text-align: center;
     color: getColor('text-description'); 
     }
-
-    &__navigation {
-    padding-top: 30px;
-    }
 }
 
 .direction-column {
@@ -108,8 +104,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
-                margin-left: 117px;
-                margin-right: 116px;
+                margin-right: 115px;
     
                 &--first {
                     width: 100%;

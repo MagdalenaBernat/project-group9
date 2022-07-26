@@ -14,12 +14,13 @@
     height: 40px;
     background-color: getColor('text-description');
     background-image: url("../images/arrow-right.svg");
+    transition-property: margin-top, box-shadow;
+    transition-duration: 500ms;
 
     &:hover {
         cursor: pointer;
         box-shadow: 8px 8px 6px 1px rgba(0, 0, 0, 0.3);
         transform: translateY(1);
-        transition-duration: 500ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         margin-top: 35px;
     }

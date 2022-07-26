@@ -17,12 +17,13 @@
   height: 40px;
   background-color: #ffffff;
   background-image: url("../images/arrow-right.svg");
+  transition-property: margin-top, box-shadow;
+  transition-duration: 500ms;
 }
 .product-card__btn:hover {
   cursor: pointer;
   box-shadow: 8px 8px 6px 1px rgba(0, 0, 0, 0.3);
   transform: translateY(1);
-  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 35px;
 }
@@ -30,7 +31,7 @@
 .container {
   min-width: 270px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 0 auto;
   padding: 0 15px;
 }
 
@@ -46,12 +47,13 @@
   font-size: 18px;
   text-transform: uppercase;
   color: #ffa5ba;
+  margin-top: 100px;
 }
 .section__header-category {
   font-family: "Titan One", cursive;
   font-weight: 400;
   font-size: 34px;
-  margin-bottom: 144px;
+  margin-bottom: 200px;
   text-transform: uppercase;
   color: #d41443;
 }
@@ -886,7 +888,7 @@
 }
 .product-card {
   width: 100%;
-  height: 485px;
+  height: 525px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -899,12 +901,12 @@
 .product-card--second {
   background-color: #f0d1a5;
   border-radius: 25px;
-  margin-top: 130px;
+  margin-top: 220px;
 }
 .product-card--third {
   background-color: #c2e297;
   border-radius: 25px;
-  margin-top: 130px;
+  margin-top: 480px;
 }
 .product-card .product-card__name {
   font-family: "Titan One", cursive;
@@ -964,9 +966,6 @@
   text-align: center;
   color: #ffffff;
 }
-.product-card__navigation {
-  padding-top: 30px;
-}
 
 .direction-column {
   display: flex;
@@ -979,8 +978,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 117px;
-    margin-right: 116px;
+    margin-right: 115px;
   }
   .product-card--first {
     width: 100%;
@@ -1277,7 +1275,7 @@ ul {
   }
 }
 .grid {
-  margin: 20px 144px 20px 98px;
+  margin: 20px 144px 20px 0px;
 }
 .grid__item {
   list-style-type: none;
@@ -1288,8 +1286,8 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 117px;
-    margin-right: 116px;
+    margin-right: 115px;
+    margin-bottom: 100px;
   }
   .grid__item {
     width: 100%;
