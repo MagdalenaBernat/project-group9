@@ -1,3 +1,4 @@
+@import '../utils/_variables.scss';
 
 .container--about {
 .about__container {
@@ -7,6 +8,7 @@
   width: calc(100% - 40px);
   padding-top: 125px;
   padding-bottom: 145px;
+  margin-top: 270px;
 }
 
 .about {
@@ -128,6 +130,7 @@
   .container--about {
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 0;
     width: calc(100% - 80px);
   }
   .about__main-tittle {
