@@ -1,4 +1,4 @@
-@import 'variables';
+@import '../utils/_variables.scss';
 
 .section {
     display: flex;
@@ -10,13 +10,17 @@
     font-family: getFont('main-font');
     font-weight: 400;
     font-size: 18px;
+    text-transform: uppercase;
     color: getColor('text-main'); 
+    margin-top: 100px;
     }
 
     &__header-category {
     font-family: getFont('main-font');
     font-weight: 400;
     font-size: 34px;
+    margin-bottom: 200px;
+    text-transform: uppercase;
     color: getColor('text-category');
     }
 

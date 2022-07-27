@@ -3,7 +3,25 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './section';
-@import './product-card';
-@import './footer';
+@import './base/button';
+@import './base/container';
+@import './base/section';
+
+
+// @import './components/customer-reviews';
+@import './components/gallery';
+@import './components/hero';
+@import './components/mobile-menu';
+@import './components/mobile';
+@import './components/modal-menu';
+@import './components/product-card';
+@import './components/section-3';
+@import './components/section4';
+
+
+@import './layout/footer';
+@import './layout/grid';
+@import './layout/header';
+
+
+@import './utils/variables';

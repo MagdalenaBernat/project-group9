@@ -1,0 +1,137 @@
+@import '../utils/variables';
+
+.container {
+
+    &--pink{
+        position: relative;
+        background-color: getColor('background-first');
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.header {
+
+    &__menu {
+        display: flex;
+        max-height: 90px;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding-top: 37px;
+
+    }
+}
+
+.logo {
+    width: 199px;
+    height: 50px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+.container {
+
+    &--pink {
+        min-width: 320px;
+        max-width: 480px;
+        height: 502px;
+        padding: 0 20px;
+    }
+}
+
+.header {
+    &__navigation {
+        display: none;
+    }
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+.container {
+
+    &--pink {
+        width: 768px;
+        height: 399px;
+        padding: 0 34px;
+    }
+}
+
+.header {
+    &__navigation {
+        display: none;
+    }
+
+    &__btn-icon {
+        width: 4px;
+        height: 8px;
+
+    }
+}
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+.container {
+    
+    &--pink {
+        width: 1280px;
+        height: 665px;
+        padding: 0;
+    }
+}
+
+.header {
+    &__menu {
+        padding-right: 115px;
+    }
+
+    &__navigation {
+        z-index: 2;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        gap: 35px;
+        align-items: center;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: getFont('secondary-font');
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.3125;
+        display: flex;
+        align-items: center;
+        color: getColor('text-description');
+
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: getColor('text-category');
+    }
+
+    &__btn-icon {
+        width: 4px;
+        height: 8px;
+
+    }
+}
+
+.logo {
+    padding-left: 46px;
+}
+
+}

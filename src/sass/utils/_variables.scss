@@ -1,3 +1,5 @@
+// ===colors===
+
 $colors: (
   'text-main': #ffa5ba,
   'text-category': #d41443,
@@ -7,11 +9,19 @@ $colors: (
   'background-second': #f0d1a5,
   'background-third': #c2e297,
   'background-social': #fea5bb,
+  'mobileColor': #E17992,
+  'background-modal':#E17992,
 );
+
+
 
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+
+// ===/colors===
+
+// ===fonts===
 
 $family-main: 'Titan One', cursive;
 $family-secondary: 'DM Sans', sans-serif;
@@ -21,5 +31,8 @@ $fonts: (
 );
 
 @function getFont($key) {
-  @return map-get($fonts, $key);
+    @return map-get($fonts, $key);
 }
+
+// ===/fonts===
+

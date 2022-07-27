@@ -1,0 +1,188 @@
+@import '../utils/_variables.scss';
+
+.about__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: calc(100% - 40px);
+  padding-top: 125px;
+  padding-bottom: 145px;
+  margin-top: 270px;
+}
+
+.about {
+  background-color: #fff5f6;
+  width: 100%;
+
+  &__small-tittle {
+    font-size: 18px;
+    line-height: 1.16em;
+    text-align: center;
+    text-transform: uppercase;
+    color: getColor('text-main');
+    font-family: getFont('main-font');
+  }
+  &__main-tittle {
+    text-transform: uppercase;
+    color: getColor('text-category');
+    font-family: getFont('main-font');
+    font-size: 34px;
+    line-height: 1.13em;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  &__cow {
+    width: calc(100% - 40px);
+  }
+  &__description {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &__text {
+    font-size: 12px;
+    font-family: getFont('secondary-font');
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.64em;
+    letter-spacing: 0.04em;
+    color: #907e82;
+  }
+  &__text:nth-child(1) {
+    color: #000;
+  }
+}
+
+.about__button {
+  color: getColor('text-category');
+  background-color: getColor('text-description');
+  border-radius: 22px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.28em;
+  cursor: pointer;
+  padding: 10px 37px;}
+
+  .about__svg {
+    fill: getColor('text-category');
+  }
+
+
+.advantages {
+  padding-left: 0px;
+  &__header {display: none;}
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__item:nth-child(1) {
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    font-family: getFont('main-font');
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    color: getColor('text-category');
+  }
+  &__item:nth-child(2) {
+    font-family: getFont('secondary-font');
+    font-weight: 700;
+  }
+  &__item--first::before {
+    background-image: url('../images/icon1.png');
+    width: 33px;
+    height: 50px;
+    content: '';
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 39px;
+  }
+  &__item--second::before {
+    background-image: url('../images/icon3.png');
+    width: 50px;
+    height: 50px;
+    content: '';
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 39px;
+  }
+  &__item--third:before {
+    background-image: url('../images/icon2.png');
+    width: 44px;
+    height: 50px;
+    content: '';
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 39px;
+  }
+}
+
+@media screen and (max-width: 767px), (min-width: 1200px)
+{.about {background-image: url(../images/milk-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;}}
+  
+@media screen and (min-width: 768px) {
+  .about__container {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0;
+    width: calc(100% - 80px);
+  }
+  .about__main-tittle {
+    font-size: 48px;
+  }
+  .about__small-tittle {
+    font-size: 26px;
+  }
+  .about__cow {
+    width: 50%;
+  }
+  .about__description {
+    width: 50%;
+    padding-left: 17px;
+    padding-top: 50px;
+    padding-right: 36px;
+  }
+  .about__main-part {
+    display: flex;
+    width: 100%;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 1.76em;
+  }
+  .about__button {
+    margin-top: 60px;
+  }
+  .advantages {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__container {
+    padding-left: 114px;
+    padding-right: 114px;
+    width: calc(100% - 228px);
+  }
+  .about__main-tittle {
+    font-size: 58px;
+  }
+  .about__small-tittle {
+    font-size: 34px;
+  }
+  .about__text {
+    font-size: 16px;
+    line-height: 1.94em;
+  }
+  .about__description {
+    padding-left: 74px;
+    padding-right: 117px;
+  }
+  
+}

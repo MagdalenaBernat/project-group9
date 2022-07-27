@@ -1,0 +1,147 @@
+@import '../utils/variables';
+
+.mobile {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    min-height: 502px;
+    background-color:transparent;
+    transition: opacity 250ms;
+    z-index: 7;
+}
+
+.mobile__modal {
+    position: absolute;
+    right: 0px;
+        top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    min-height: 502px;
+    background-color: getColor('mobileColor') ;
+
+}
+
+.mobile__close{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 23px;
+    right: 34px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-btn-icon {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+    transform: rotate(-90deg) 3000ms;
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.mobile{
+    &__btn-icon {
+            width: 4px;
+            height: 8px;
+        }
+    &__menu{
+        display: flex;
+        justify-content: center;
+        margin:0 auto;
+        align-items: flex-start;
+        align-content: center;
+        flex-direction: column;
+        padding-top: 60px;
+
+    }
+
+    &__links{
+        list-style: none;
+    }
+
+    &__link{
+        font-family: getFont('secondary-font');
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: getColor('text-description');
+    }
+
+    &__links{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 19px;
+        padding-left: 0;
+    }
+
+    &__item{
+        border-top: 1px solid getColor('mobileColor');
+        border-bottom: 1px solid getColor('mobileColor');
+        padding: 21px 13px;
+
+        
+    }
+
+    &__link{
+    text-decoration: none;
+    font-family: getFont('secondary-font');
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2857;
+    color:getColor('text-description');
+    
+    &:hover,
+    &:focus{
+        color: getColor('text-category');
+    }
+}
+}
+
+
+@media screen and (min-width:767px){
+    .mobile__modal {
+            right: -70px;
+            top: 50%;
+            width: 250px;
+            min-height: 502px;
+    }
+
+    .mobile {
+        width: 254px;
+        min-height: 1020px;
+
+    }
+
+    .mobile__modal {
+        width: 254px;
+        min-height: 1020px;
+        }
+
+    .mobile__item{
+        padding-left:24px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .mobile,
+    .mobile__modal{
+        display: none;
+    }
+}
