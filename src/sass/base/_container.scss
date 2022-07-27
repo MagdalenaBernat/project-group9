@@ -1,7 +1,49 @@
+@import '../utils/variables';
+
 .container {
     min-width: 270px;
     max-width: 1200px;
     margin-top: 0 auto;
     padding: 0 15px;
+
+    &__header {
+        position: relative;
+        background-color: getColor('background-first');
+        margin: 0 auto;
+        padding: 0;
+    }
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+
+        &__header {
+            min-width: 320px;
+            max-width: 480px;
+            height: 502px;
+            padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .container {
+    
+        &__header {
+            width: 768px;
+            height: 399px;
+            padding: 0 34px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+
+        &__header {
+            width: 1280px;
+            height: 665px;
+            padding: 0;
+        }
+    }
+}
