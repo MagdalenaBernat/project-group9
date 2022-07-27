@@ -6,4 +6,9 @@
     align-items: center;
     padding: 0 20px;
     background-image: linear-gradient(to bottom, getBgColor('text-category') 24%, ('text-description') 24%);
+
+    &__picture {
+        display: block;
+
+    }
 }
