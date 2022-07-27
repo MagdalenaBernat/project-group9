@@ -47,9 +47,10 @@
     .grid {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        margin-left: 34px;
-        margin-right: 34px;
+        width: 100%;
+        // justify-content: flex-start;
+        // margin-left: 34px;
+        // margin-right: 34px;
 
         &__item {
             width: 100%;
