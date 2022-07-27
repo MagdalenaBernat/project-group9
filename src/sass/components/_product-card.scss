@@ -23,6 +23,7 @@
     background-color: getColor('background-third');
     border-radius: 25px;
     margin-top: 480px;
+    margin-bottom: 100px;
     }
 
     .product-card__name {
@@ -113,7 +114,7 @@
                     margin-right: 29px;
                 }
 
-                &--second,
+                &--second{}
                 &--third {
                     height: 525px;
                     width: 330px;
