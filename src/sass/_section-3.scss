@@ -2,7 +2,7 @@
 .about__container {
   padding-left: 20px;
   padding-right: 20px;
-  width: calc(100% - 40px);
+  width: 100%;
   padding-top: 125px;
   padding-bottom: 145px;
 }
@@ -127,7 +127,6 @@
   .about__container {
     padding-left: 40px;
     padding-right: 40px;
-    width: calc(100% - 80px);
   }
   .about__main-tittle {
     font-size: 48px;
@@ -165,7 +164,6 @@
   .about__container {
     padding-left: 114px;
     padding-right: 114px;
-    width: calc(100% - 228px);
   }
   .about__main-tittle {
     font-size: 58px;
