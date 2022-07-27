@@ -11,20 +11,95 @@
     &--first {
     background-color: getColor('background-first');
     border-radius: 25px;
+    height: 525px;
     }
 
     &--second {
     background-color: getColor('background-second');
     border-radius: 25px;
-    margin-top: 220px;
+    margin-top: 250px;
+    height: 525px;
+    padding-bottom: 50px;
     }
 
     &--third {
     background-color: getColor('background-third');
     border-radius: 25px;
-    margin-top: 480px;
-    margin-bottom: 100px;
+    margin-top: 510px;
+    height: 525px;
+    padding-bottom: 50px;
     }
+
+
+        @media screen and (min-width: 1200px) {
+    
+            //desktop
+            .product-card {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                width: 100%;
+    
+                &--first {
+                    height: 525px;
+                    width: 330px;
+                    margin-right: 29px;
+                }
+    
+                &--second,
+                &--third {
+                    height: 525px;
+                    width: 330px;
+                    margin-right: 29px;
+                    margin-top: 0;
+                }
+    
+                &__descriptiom {
+                    max-width: 241px;
+                }
+            }
+    
+            .product-card__name {
+                font-size: 30px;
+            }
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+            // tablet
+            .product-card {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-left: 34px;
+                margin-right: 34px;
+                margin-top: 0;
+    
+                &--first {
+                    width: 100%;
+                    height: 485px;
+                    margin: 20px;
+                    padding-bottom: 40px;
+                }
+    
+                &--second,
+                &--third {
+                    width: 100%;
+                    height: 485px;
+                    margin: 20px;
+                    padding-bottom: 40px;
+                }
+    
+                &__descriptiom {
+                    max-width: 241px;
+                }
+            }
+        }
+    
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            // mobile
+        }
+
 
     .product-card__name {
     font-family: getFont('main-font');
@@ -96,72 +171,3 @@
     flex-direction: column;
     align-items: center;
 }
-
-
-    @media screen and (min-width: 1200px) {
-    
-        //desktop
-            .product-card {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                margin-right: 115px;
-                width: 100%;
-    
-                &--first {
-                    height: 525px;
-                    width: 330px;
-                    margin-right: 29px;
-                }
-
-                &--second{}
-                &--third {
-                    height: 525px;
-                    width: 330px;
-                    margin-right: 29px;
-                    margin-top: 0;
-                }
-
-                &__descriptiom {
-                max-width: 241px;
-                }
-            }
-
-            .product-card__name {
-            font-size: 30px;
-            }
-        }
-    
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
-            // tablet
-            .product-card {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                margin-left: 34px;
-                margin-right: 34px;
-    
-                &--first{
-                    width: 100%;
-                    height: 485px;
-                    margin: 20px;
-                }
-
-                &--second,
-                &--third {
-                    width: 100%;
-                    height: 485px;
-                    margin: 20px;
-                    margin-top: 0;
-                }
-
-                &__descriptiom {
-                max-width: 241px;
-                }
-            }
-        }
-    
-        @media screen and (min-width: 320px) and (max-width: 767px) {
-            // mobile
-        }
