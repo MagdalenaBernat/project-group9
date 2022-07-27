@@ -12,7 +12,6 @@
     background-color: getColor('background-first');
     border-radius: 25px;
     height: 525px;
-    margin-left: 100px;
     }
 
     &--second {
@@ -72,9 +71,10 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
-                margin-left: 34px;
-                margin-right: 34px;
-                margin-top: 0;
+                margin: 0 auto;
+                // margin-left: 34px;
+                // margin-right: 34px;
+                // margin-top: 0;
     
                 &--first {
                     width: 100%;
@@ -103,68 +103,68 @@
 
 
     .product-card__name {
-    font-family: getFont('main-font');
-    font-weight: 400;
-    font-size: 30px;
-    color: getColor('text-description'); 
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    }
+        font-family: getFont('main-font');
+        font-weight: 400;
+        font-size: 30px;
+        color: getColor('text-description'); 
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -10px;
+        margin-bottom: 30px;
+        }
 
-    &__name--first::before {
-    content: "";
-    display: block;
-    width: 249px;
-    height: 252px;
-    margin-top: -113px;
-    margin-bottom: 22px;
-    background-image: url("../images/ice-cream.png");
-    }
+        &__name--first::before {
+            content: "";
+            display: block;
+            width: 249px;
+            height: 252px;
+            margin-top: -113px;
+            margin-bottom: 22px;
+            background-image: url("../images/ice-cream.png");
+        }
 
-    &__name--second::before {
-    content: "";
-    display: block;
-    width: 249px;
-    height: 252px;
-    margin-top: -113px;
-    margin-bottom: 22px;
-    background-image: url("../images/ice_coffee.png");
-    }
+        &__name--second::before {
+            content: "";
+        display: block;
+        width: 249px;
+        height: 252px;
+        margin-top: -113px;
+        margin-bottom: 22px;
+        background-image: url("../images/ice_coffee.png");
+        }
 
-    &__name--third::before {
-    content: "";
-    display: block;
-    width: 249px;
-    height: 252px;
-    margin-top: -113px;
-    margin-bottom: 22px;
-    background-image: url("../images/milkshakes.png");
-    }
+        &__name--third::before {
+        content: "";
+        display: block;
+        width: 249px;
+        height: 252px;
+        margin-top: -113px;
+        margin-bottom: 22px;
+        background-image: url("../images/milkshakes.png");
+        }
 
-    &__name::after {
-    content: "\00B7 \00B7 \00B7";
-    display: block;
-    color: getColor('text-description');
-    font-weight: 400;
-    font-size: 20px;
-    padding-top: 30px;
-    }
+        &__name::after {
+            content: "\00B7 \00B7 \00B7";
+            display: block;
+            color: getColor('text-description');
+            font-weight: 400;
+            font-size: 20px;
+            padding-top: 30px;
+        }
 
-    &__description {
-    max-width: 200px;
-    font-family: getFont('secondary-font');
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: getColor('text-description'); 
-    }
+        &__description {
+            max-width: 200px;
+            font-family: getFont('secondary-font');
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.52;
+            letter-spacing: 0.04em;
+            text-align: center;
+            color: getColor('text-description'); 
+        }
 }
 
 .direction-column {
