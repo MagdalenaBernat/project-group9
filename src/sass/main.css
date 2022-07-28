@@ -1,0 +1,235 @@
+.about__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  padding-top: 125px;
+  padding-bottom: 145px;
+}
+
+.about {
+  background-color: #fff5f6;
+  width: 100%;
+}
+.about__small-tittle {
+  font-size: 18px;
+  line-height: 1.16em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFA5BA;
+  font-family: "Titan One", cursive;
+}
+.about__main-tittle {
+  text-transform: uppercase;
+  color: #D41443;
+  font-family: "Titan One", cursive;
+  font-size: 34px;
+  line-height: 1.13em;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.about__main-tittle:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.about__cow {
+  width: 100%;
+}
+.about__description {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.about__text {
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.64em;
+  letter-spacing: 0.04em;
+  color: #907e82;
+}
+.about__text:nth-child(1) {
+  color: #000;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.about__button {
+  color: #D41443;
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.28em;
+  cursor: pointer;
+  padding: 10px 37px;
+  transition: transform 2s;
+}
+
+.about__button:hover,
+.about__button:focus {
+  transform: scale(1.2);
+}
+
+.about__svg {
+  fill: #D41443;
+}
+
+.advantages {
+  padding-left: 0px;
+}
+.advantages__header {
+  display: none;
+}
+.advantages__list {
+  list-style: none;
+}
+.advantages__item {
+  list-style: none;
+  transition: transform 3s;
+  cursor: pointer;
+}
+.advantages__item:nth-child(1) {
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  font-family: "Titan One", cursive;
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  color: #D41443;
+}
+.advantages__item:nth-child(2) {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+.advantages__item--first::before {
+  background-image: url("../images/icon1.png");
+  width: 33px;
+  height: 50px;
+  content: "";
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 39px;
+}
+.advantages__item--second::before {
+  background-image: url("../images/icon3.png");
+  width: 50px;
+  height: 50px;
+  content: "";
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 39px;
+}
+.advantages__item--third:before {
+  background-image: url("../images/icon2.png");
+  width: 44px;
+  height: 50px;
+  content: "";
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 39px;
+}
+
+.advantages__item:hover {
+  transform: scale(1.1);
+  text-shadow: 1px 1px #FFA5BA;
+}
+
+@media screen and (max-width: 767px), (min-width: 1200px) {
+  .about {
+    background-image: url(../images/milk-mobile@3x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .about__main-tittle {
+    font-size: 48px;
+  }
+  .about__small-tittle {
+    font-size: 26px;
+  }
+  .about__cow {
+    width: 50%;
+  }
+  .about__description {
+    width: 50%;
+    padding-left: 17px;
+    padding-top: 50px;
+    padding-right: 36px;
+  }
+  .about__main-part {
+    display: flex;
+    width: 100%;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 1.76em;
+  }
+  .about__button {
+    margin-top: 60px;
+  }
+  .advantages {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__container {
+    padding-left: 114px;
+    padding-right: 114px;
+  }
+  .about__main-tittle {
+    font-size: 58px;
+  }
+  .about__small-tittle {
+    font-size: 34px;
+  }
+  .about__text {
+    font-size: 16px;
+    line-height: 1.94em;
+  }
+  .about__description {
+    padding-left: 74px;
+    padding-right: 117px;
+  }
+}/*# sourceMappingURL=main.css.map */
