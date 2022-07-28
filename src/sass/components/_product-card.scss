@@ -37,7 +37,6 @@
             .product-card {
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-start;
                 width: 100%;
     
                 &--first {
@@ -70,11 +69,9 @@
             .product-card {
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-start;
+                width: 100%;
                 margin: 0 auto;
-                // margin-left: 34px;
-                // margin-right: 34px;
-                // margin-top: 0;
+
     
                 &--first {
                     width: 100%;

@@ -1,4 +1,4 @@
-@import '../utils/_variables.scss';
+@import '../utils/_variables';
 
 .product-card__btn {
     display: flex;
@@ -28,4 +28,308 @@
     }
 }
 
+.button__title--products {
+    color: getColor('text-description');
+}
+    
+.button__title--about {
+    color: getColor('text-category');
+}
 
+@media screen and (max-width: 767px) {
+    .button__header {
+            display: none;
+        }
+    
+        .button {
+    
+            &__mobile,
+            &__about,
+            &__products {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                border-style: none;
+                z-index: 4;
+                cursor: pointer;
+            }
+    
+            &__mobile {
+                border-radius: 22px;
+                width: 209px;
+                height: 44px;
+                align-items: center;
+                margin: 0 auto;
+    
+            }
+    
+            &__mobile,
+            &__about {
+                background-color: getColor('text-description');
+                border-color: getColor('text-description');
+            }
+    
+            &__mobile:hover,
+            &__mobile:focus,
+            &__about:hover,
+            &__about:focus {
+                background: getColor('bgHover');
+                border-color: getColor('bgHover');
+                fill: getColor('text-category');
+            }
+    
+            &__products {
+                background: getColor('text-category');
+                border-color: getColor('text-category');
+    
+                &:hover,
+                &:focus {
+                    background: getColor('bgFocus');
+                    border-color: getColor('bgFocus');
+                }
+            }
+    
+            &__about,
+            &__products {
+                border-radius: 20px;
+                height: 24px;
+            }
+        }
+    
+        .button__title--header,
+        .button__title--products,
+        .button__title--about {
+            font-family: getFont('secondary-font');
+            line-height: 1.3125;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            font-size: 8px;
+        }
+    
+        .button__title--header {
+            font-weight: 700;
+            color: getColor('text-category');
+            font-size: 16px;
+        }
+    }
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+    .button {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            gap: 30px;
+            z-index: 4;
+    
+            &__header,
+            &__mobile,
+            &__about,
+            &__products {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                border-style: none;
+                z-index: 4;
+                cursor: pointer;
+            }
+    
+            &__mobile {
+                border-radius: 22px;
+                width: 186px;
+                height: 44px;
+                align-items: center;
+                margin: 0 auto;
+            }
+    
+            &__mobile,
+            &__header,
+            &__about {
+                background-color: getColor('text-description');
+                border-color: getColor('text-description');
+            }
+    
+            &__mobile:hover,
+            &__mobile:focus,
+            &__header:hover,
+            &__header:focus,
+            &__about:hover,
+            &__about:focus {
+                background: getColor('bgHover');
+                border-color: getColor('bgHover');
+                fill: getColor('text-category');
+            }
+    
+            &__products {
+                background: getColor('text-category');
+                border-color: getColor('text-category');
+    
+                &:hover,
+                &:focus {
+                    background: getColor('bgFocus');
+                    border-color: getColor('bgFocus');
+                }
+            }
+    
+            &__header {
+                width: 160px;
+                height: 44px;
+                border-radius: 22px;
+            }
+    
+            &__about,
+            &__products {
+                border-radius: 20px;
+                height: 24px;
+            }
+        }
+        .button__title--header,
+        .button__title--products,
+        .button__title--about {
+            font-family: getFont('secondary-font');
+            line-height: 1.3125;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            font-size: 8px;
+        }
+    
+    
+        .button__title--header {
+            font-weight: 700;
+            color: getColor('text-category');
+            font-size: 16px;
+        }
+
+.button--circle {
+    background-color: getColor('background-first');
+    border-color: getColor('background-first');
+    border-radius: 50%;
+    border-style: none;
+    width: 18px;
+    height: 18px;
+    transition-property: margin-top, box-shadow;
+    transition-duration: 500ms;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 8px 8px 6px 1px rgba(0, 0, 0, 0.3);
+        transform: translateY(1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        margin-top: 5px;
+    }
+}
+}
+
+@media screen and (min-width:1200px) {
+
+.button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 4;
+
+        &__header,
+        &__mobile,
+        &__about,
+        &__products {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border-style: none;
+            z-index: 4;
+            cursor: pointer;
+        }
+
+        &__header,
+        &__about,
+        &__products {
+            border-radius: 22px;
+        }
+
+        &__header,
+        &__about {
+            width: 159px;
+            height: 44px;
+        }
+
+        &__products {
+            width: 104px;
+            height: 40px;
+
+        }
+
+        &__header,
+        &__about {
+            background-color: getColor('text-description');
+            border-color: getColor('text-description');
+        }
+
+        &__header:hover,
+        &__header:focus,
+        &__about:hover,
+        &__about:focus {
+            background: getColor('bgHover');
+            border-color: getColor('bgHover');
+            fill: getColor('text-category');
+        }
+
+        &__products {
+            background: getColor('text-category');
+            border-color: getColor('text-category');
+
+            &:hover,
+            &:focus {
+                background: getColor('bgFocus');
+                border-color: getColor('bgFocus');
+            }
+        }
+    }
+
+.button__title--header {
+    font-family: getFont('secondary-font');
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    color: getColor('text-category');
+}
+
+.button__title--products,
+.button__title--about {
+    font-family: getFont('secondary-font');
+    font-size: 14px;
+    line-height: 1.286;
+}
+
+.button--circle {
+    background-color: getColor('background-first');
+    border-color: getColor('background-first');
+    border-radius: 50%;
+    border-style: none;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    transition-property: margin-top, box-shadow;
+    transition-duration: 500ms;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 8px 8px 6px 1px rgba(0, 0, 0, 0.3);
+        transform: translateY(1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        margin-top: 5px;
+    }
+}
+}

@@ -11,8 +11,14 @@ $colors: (
   'background-social': #fea5bb,
   'mobileColor': #E17992,
   'background-modal':#E17992,
+  'bgFocus':#C7133E,
+  'bgHover':#ECEBEB,
+  'reviews-first': #fafafa,
+  'reviews-second': #e1e1e1,
+  'reviews-third': #c7133e,
 );
 
+)
 
 
 @function getColor($key) {
