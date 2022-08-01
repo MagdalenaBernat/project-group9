@@ -1,0 +1,169 @@
+.about {
+  background-color: #fff5f6;
+  width: 100%;
+
+  &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    padding-top: 125px;
+    padding-bottom: 145px;
+  }
+
+  &__small-tittle {
+    font-size: 18px;
+    line-height: 1.16em;
+    text-align: center;
+    text-transform: uppercase;
+    color: getColor('text-main');
+    font-family: getFont('main-font');
+  }
+  &__main-tittle {
+    text-transform: uppercase;
+    color: getColor('text-category');
+    font-family: getFont('main-font');
+    font-size: 34px;
+    line-height: 1.13em;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  &__main-tittle:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  &__cow {
+    width: 100%;
+  }
+  &__description {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  &__text {
+    font-size: 12px;
+    font-family: getFont('secondary-font');
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.64em;
+    letter-spacing: 0.04em;
+    color: #907e82;
+  }
+  &__text:nth-child(1) {
+    color: #000;
+  }
+  &__button {
+    color: getColor('text-category');
+    background-color: getColor('text-description');
+    border-radius: 22px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.28em;
+    cursor: pointer;
+    padding: 10px 37px;
+    transition: transform 2s;
+  }
+  &__button:hover,
+  &__button:focus {
+    transform: scale(1.2);
+  }
+
+  &_svg {
+    fill: getColor('text-category');
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 767px), (min-width: 1200px)
+{.about {background-image: url(../images/milk-mobile@3x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;}}
+
+  @media screen and (min-width: 768px) {
+    .about__container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .about__main-tittle {
+      font-size: 48px;
+    }
+    .about__small-tittle {
+      font-size: 26px;
+    }
+    .about__cow {
+      width: 50%;
+    }
+    .about__description {
+      width: 50%;
+      padding-left: 17px;
+      padding-top: 50px;
+      padding-right: 36px;
+    }
+    .about__main-part {
+      display: flex;
+      width: 100%;
+    }
+    .about__text {
+      font-size: 14px;
+      line-height: 1.76em;
+    }
+    .about__button {
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .about__container {
+          padding-left: 114px;
+          padding-right: 114px;
+        }
+        .about__main-tittle {
+          font-size: 58px;
+        }
+        .about__small-tittle {
+          font-size: 34px;
+        }
+        .about__text {
+          font-size: 16px;
+          line-height: 1.94em;
+        }
+        .about__description {
+          padding-left: 74px;
+          padding-right: 117px;
+        }
+        
+      }}
