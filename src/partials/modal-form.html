@@ -1,0 +1,47 @@
+
+<div class="backdrop is-hidden" data-form>
+<div class="modal-form">
+    <button class="modal-form__button--close" data-form-close>
+      <svg class="modal-form__icon--close" width="14" height="14">
+        <use href="./images/sprite-modal.svg#icon-close"></use>
+        </svg>
+    </button>
+    <div class="modal-form__content">
+    <h3 class="modal-form__title">Leave your details in the form below<h3>
+    <form>
+        <div>
+        <label>
+            <p class="modal-form__label-name">Name</p>
+            <input class="modal-form__input" type="text" name="username" required/>
+        </label>
+        </div>
+        <div>
+        <label>
+            <p class="modal-form__label-name">Telephone</p>
+            <input class="modal-form__input" type="tel" name="phone" required/>
+        </label>
+        </div>
+        <div>
+        <label>
+            <p class="modal-form__label-name">Email</p>
+            <input class="modal-form__input" type="email" name="email" required />
+        </label>
+        </div>
+        <div>
+        <label>
+            <p class="modal-form__label-name">Feedback</p>
+            <textarea class="modal-form__input modal-form__texarea" name="feedback" rows="5" placeholder="Leave a comment"></textarea>
+        </label>
+        </div>
+        <div>
+        <label class="modal-form__label">
+          <input  class="modal-form__checkbox" type="checkbox" name="agree" value="acceptance of the regulations" required/>
+          <p class="modal-form__text">I declare that I accept <a class="modal-form__text--link"href="regulamin">Regulations</a> and <a class="modal-form__text--link" href="polityka prywatności">Privacy Policy</a>.</p>
+        </label>
+        </div>
+        <button class="modal-form__button" type="submit">Submit</button>
+    </form>
+</div>
+</div>
+</div>
+<script src="./src/modal/modal-form.js"></script>
